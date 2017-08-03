@@ -1,0 +1,145 @@
+$colorMain:#276272;
+$dark:#444444;
+$light:#DDDDDD;
+
+$font1:32px;
+$font2:20px;
+$font3:16px;
+
+$gutter:10px;
+
+@mixin textStyle($size){
+  font-size:$size;
+  font-weight:bold;
+  font-family:helvetica, sans-serif;
+  text-align:center;
+  line-height:20px;
+}
+@mixin zoneMap(){
+  width:auto;
+  height:90%;
+  padding:10px 0;
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+
+@mixin popupGui(){
+  position:fixed;
+  display:none;
+}
+
+@mixin buttons(){
+  @include textStyle($font3);
+  background-color:$colorMain;
+  color:white;
+  top:0px;
+  right:0px;
+  &:hover{
+  box-shadow:none;
+  background-color: $light;
+  }
+  &:focus{
+  outline:none;
+  }
+}
+
+body {
+  background-color:$colorMain;
+}
+h1{
+  @include textStyle($font1);
+}
+h2{
+  @include textStyle($font2);
+}
+h3, p{
+  @include textStyle($font3);
+}
+img {
+  width:10%;
+  height:auto;
+  display:block;
+  margin:auto;
+  padding-top:10px;
+  &.zonePhoto {
+   @include zoneMap;
+  }
+}
+path {
+  stroke-width:3px;
+  &:hover {
+  stroke-width:10px;
+  }
+}
+circle{
+  stroke-width:2px;
+  stroke:$dark;
+  &:hover{
+  stroke:#22AADD;
+  }
+}
+.header {
+  margin-bottom:0px;
+  padding-bottom:$gutter;
+  width:100%;
+  background:$light;
+  border:none;
+}
+.map-box {
+  width:50%;
+  display:block;
+  margin:auto;
+  margin-top:$gutter;
+  background:$light;
+  border:5px solid white;
+
+}
+.river-box {
+  @include popupGui;
+  bottom:0;
+  left:0;
+  width:15%;
+  margin-left:$gutter;
+  background:$light;
+  border:5px solid white;
+}
+.zoneInterface{
+ @include popupGui;
+ width:100%;
+ height:100%;
+ background-color:$dark;
+ top:0px;
+ left:0px;
+}
+.zoneSVG{
+  @include zoneMap;
+}
+.dataPane{
+  @include popupGui;
+  top:$gutter;
+  padding:$gutter;
+  right:25%;
+  width:50%;
+  height:70%;
+  background-color:$dark;
+  color:white;
+  border:2px solid #22AADD;
+  z-index:1;
+  overflow-y:scroll;
+}
+.riverAttributes{
+  text-align:left;
+}
+.closeOut {
+  @include buttons;
+  @include popupGui;
+  width:10%;
+  height:10%;
+  z-index:2;
+}
+.closeData {
+  @include buttons;
+  position:absolute;
+  z-index:2;
+}
