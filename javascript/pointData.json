@@ -21,38 +21,38 @@
   {"basinPicker":"basinFive",
   "picker":"AM",
   "regArea":"A and M Reservoir in Sweetwater County",
-  "boats":"No internal combustion engines",
+  "boats":"No internal combustion engines"
   },
 
   {"picker":"alcovaRes",
    "regArea":"Alcova Reservoir in Natrona County",
-   "creel":"12 Walleye per day or in possession, regulations on Walleye taken by spear gun \n not applicable",
+   "creel":"12 Walleye per day or in possession, regulations on Walleye taken by spear gun \n not applicable"
    },
 
   {"picker":"alsopLake",
     "regArea":"Alsop Lake in Albany County",
     "creel":"2 Trout per day or in posession. All Trout less than 16 inches to be released immediately",
-    "tackle":"Artificial flies and lures only",
+    "tackle":"Artificial flies and lures only"
     },
 
   {"picker":"bryanStock",
    "regArea":"Bryan Stock Trail Pond In Natrona County",
-   "boats":"No internal combustion engines",
+   "boats":"No internal combustion engines"
    },
 
    {"picker":"bumpSullivan",
     "regArea":"Bump Sullivan Reservoir in Goshen County",
-    "season":"November 1 - February 15",
+    "season":"November 1 - February 15"
     },
 
    {"picker":"drainage6",
     "regArea":"Crow Creek, Dale Creek, Horse Creek, Loedgepole Creek drainages on the Medicine Bow-Routt National Forest upstream from forest boundary in Albany County",
-    "creel":"6 Brook Trout per day or in possession",
+    "creel":"6 Brook Trout per day or in possession"
     },
 
    {"picker":"crystalRes",
     "regArea":"Crystal Reservoir in Laramie County",
-    "boats":"No motors over 15 horsepower",
+    "boats":"No motors over 15 horsepower"
     }
    ]
 ]
