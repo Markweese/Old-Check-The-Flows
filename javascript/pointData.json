@@ -77,6 +77,56 @@
       "picker":"lilyLake",
       "regArea":"Lily Lake in Park County",
       "boats":"No motors over 15 horsepower"
+    },
+    {
+      "picker":"littleMoose",
+      "regArea":"Little Moose Lake in Park County",
+      "creel":"2 Trout per day or in possession",
+      "tackle":"Artificial flies and lures only"
+    },
+    {
+      "picker":"luceRes",
+      "regArea":"Luce Reservoir in Park County",
+      "tackle":"Artificial flies and lures only",
+      "other":"All Trout to be released immediately"
+    },
+    {
+      "picker":"luckeyPond",
+      "regArea":"Luckey Pond(Chittim Reservoir) in Fremont County",
+      "boats":"No internal combustion engines",
+      "other":"Closed to ice fishing"
+    },
+    {
+      "picker":"middleDepression",
+      "regArea":"Middle Depression Reservoir in Fremont County",
+      "creel":"3 Trout per day or in possession, no more than 1 over 16 inches"
+    },
+    {
+    "picker":"middleFork",
+    "regArea":"Middle Fork of the Popo Agie River from the \"Rise\" downstream to the Bridge on the Sinks Canyon Road in Fremont County",
+    "season":"Closed throughout year"
+    },
+    {
+    "picker":"newtownToGibbs",
+    "regArea":"North Fork of the Shoshone River drainage from Newton Creek downstream to Gibbs Bridge(including Newton Creek) in Park County",
+    "season":"July 1 - March 30"
+    },
+    {
+    "picker":"gibbsUpstream",
+    "regArea":"North Fork of the Shoshone River drainage upstream of Gibbs Bridge in Park County",
+    "creel":"3 Trout per day or in possession, no more than 2 Cutthroat, no more than 1 Trout over 18 inches"
+    },
+    {
+    "picker":"nowood",
+    "regArea":"Nowood River drainage streams upstream from the confluence with the Bighorn River including Paintrock and Tensleep Creeks in Big Horn, Johnson, and Washakie counties",
+    "creel":"6 Trout per day or in possession"
+    },
+    {
+    "picker":"pelhamLake",
+    "regArea":"Pelham Lake in Fremont County",
+    "creel":"2 Trout per day or in possession, return all trout less than 16 inches to the water immediately",
+    "boats":"No internal combustion engines",
+    "tackle":"Artificial flies and lures only"
     }
  ],
 
