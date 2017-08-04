@@ -3,7 +3,7 @@
    {"basinPicker":"basinTwo",
    "picker":"beckLake",
    "regArea":"Beck Lake, New Cody Reservoir, and Markham Reservoir in Park County",
-   "boats":"No internal combustion engines"
+   "boats":"<h1>Boating Regulations</h1><br>No internal combustion engines"
    },
 
    {"picker":"bigHorn",
@@ -21,7 +21,7 @@
   {"basinPicker":"basinFive",
   "picker":"AM",
   "regArea":"A and M Reservoir in Sweetwater County",
-  "boats":"No internal combustion engines"
+  "boats":"<h1>Boating Regulations</h1><br>No internal combustion engines"
   },
 
   {"picker":"alcovaRes",
@@ -37,7 +37,7 @@
 
   {"picker":"bryanStock",
    "regArea":"Bryan Stock Trail Pond In Natrona County",
-   "boats":"No internal combustion engines"
+   "boats":"<h1>Boating Regulations</h1><br>No internal combustion engines"
    },
 
    {"picker":"bumpSullivan",
@@ -52,7 +52,7 @@
 
    {"picker":"crystalRes",
     "regArea":"Crystal Reservoir in Laramie County",
-    "boats":"No motors over 15 horsepower"
+    "boats":"<h1>Boating Regulations</h1><br>No motors over 15 horsepower"
     }
    ]
 ]
