@@ -2,17 +2,17 @@
  [
    {"basinPicker":"basinTwo",
    "picker":"beckLake",
-   "regArea":"Beck Lake, New Cody Reservoir, and Markham Reservoir in Park County",
+   "regArea":"<h2>Beck Lake, New Cody Reservoir, and Markham Reservoir in Park County</h2>",
    "boats":"<h2>Boating Regulations</h2><br>No internal combustion engines"
    },
 
    {"picker":"bigHorn",
-    "regArea":"Big Horn Lake downstream from Highway 14A in Big Horn County",
+    "regArea":"<h2>Big Horn Lake downstream from Highway 14A in Big Horn County</h2>",
     "creel":"Trout- 5 per day or 10 in possession<br>Bass- 10 per day or 20 in possession<br>Walleye and Sauger- 6 per day or 12 in possession, no more than 3 can be Sauger<br>Channel Catfish- 6 per day or in possession<br>Burbot(ling)- 3 per day or in possession<br>Shovelnose Sturgeon- 3 per day or in possession",
     "other":"All walleye and sauger to be kept whole until off water and done fishing."},
 
    {"picker":"bigHornWind",
-    "regArea":"Bighorn and Wind River drainage lakes and streams in Big Horn, Fremont, Hot Springs, Park, and Washakie counties",
+    "regArea":"<h2>Bighorn and Wind River drainage lakes and streams in Big Horn, Fremont, Hot Springs, Park, and Washakie counties</h2>",
     "other":"All walleye and sauger to be kept whole until off water and done fishing.\n One inch piece of skin to be left for species identification while in transit or in the field"
     }
  ],
@@ -20,38 +20,38 @@
  [
   {"basinPicker":"basinFive",
   "picker":"AM",
-  "regArea":"A and M Reservoir in Sweetwater County",
+  "regArea":"<h2>A and M Reservoir in Sweetwater County</h2>",
   "boats":"<h2>Boating Regulations</h2><br>No internal combustion engines"
   },
 
   {"picker":"alcovaRes",
-   "regArea":"Alcova Reservoir in Natrona County",
+   "regArea":"<h2>Alcova Reservoir in Natrona County</h2>",
    "creel":"12 Walleye per day or in possession, regulations on Walleye taken by spear gun \n not applicable"
    },
 
   {"picker":"alsopLake",
-    "regArea":"Alsop Lake in Albany County",
+    "regArea":"<h2>Alsop Lake in Albany County</h2>",
     "creel":"2 Trout per day or in posession. All Trout less than 16 inches to be released immediately",
     "tackle":"Artificial flies and lures only"
     },
 
   {"picker":"bryanStock",
-   "regArea":"Bryan Stock Trail Pond In Natrona County",
+   "regArea":"<h2>Bryan Stock Trail Pond In Natrona County</h2>",
    "boats":"<h2>Boating Regulations</h2><br>No internal combustion engines"
    },
 
    {"picker":"bumpSullivan",
-    "regArea":"Bump Sullivan Reservoir in Goshen County",
+    "regArea":"<h2>Bump Sullivan Reservoir in Goshen County</h2>",
     "season":"November 1 - February 15"
     },
 
    {"picker":"drainage6",
-    "regArea":"Crow Creek, Dale Creek, Horse Creek, Loedgepole Creek drainages on the Medicine Bow-Routt National Forest upstream from forest boundary in Albany County",
+    "regArea":"<h2>Crow Creek, Dale Creek, Horse Creek, Loedgepole Creek drainages on the Medicine Bow-Routt National Forest upstream from forest boundary in Albany County</h2>",
     "creel":"6 Brook Trout per day or in possession"
     },
 
    {"picker":"crystalRes",
-    "regArea":"Crystal Reservoir in Laramie County",
+    "regArea":"<h2>Crystal Reservoir in Laramie County</h2>",
     "boats":"<h2>Boating Regulations</h2><br>No motors over 15 horsepower"
     }
    ]
