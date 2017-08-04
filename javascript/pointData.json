@@ -15,6 +15,69 @@
     "regArea":"<h2>Bighorn and Wind River drainage lakes and streams in Big Horn, Fremont, Hot Springs, Park, and Washakie counties</h2>",
     "other":"All walleye and sauger to be kept whole until off water and done fishing.\n One inch piece of skin to be left for species identification while in transit or in the field"
     }
+    {
+    "picker":"buffaloBill",
+    "regArea":"Buffalo Bill Reservoir, excluding South Fork and Diamond Creek Dike Ponds in Park County",
+    "season":"April 1 - July 14 for areas lying west of Spring Creek up to Gibbs Bridge.",
+    "creel":"Trout(excluding lakers) - 3 per day or in possession, no more than 2 being cutthroat, no more than 1 over 18 inches.",
+    "other":"Walleye designated as nongame fish, kill immediately"
+    }
+    {
+    "picker":"clarksFork",
+    "regArea":"Clarks Fork From WY-MT state line downstream to the Shoshone National Forest Boundary in Park County",
+    "tackle":"Artificial flies and lures only"
+    }
+    {
+    "picker":"deaverRes",
+    "regArea":"Deaver Reservoir in Park County",
+    "creel":"3 Walleye per day or in possession",
+    "boats":"No motors over 15 horsepower"
+    }
+    {
+      "picker":"eastForkWind",
+      "regArea":"East Fork of the Wind River drainage streams upstream from the confluence from the Wind River, including Bear Creek and Wiggins Fork, in Fremont County",
+      "creel":"3 Trout per day or in possession, no more than 1 over 16 inches, all Cutthroat released to water immediately",
+      "tackle":"Artificial flies and lures only"
+    }
+    {
+      "picker":"eastNewton",
+      "regArea":"East Newton Lake in Park County",
+      "tackle":"Artificial flies and lures only",
+      "boats":"No motors over 15 horsepower",
+      "other":"All trout released to water immediately"
+    }
+    {
+      "picker":"fiddlersLake",
+      "regArea":"Fiddlers Lake in Fremont County",
+      "boats":"No internal combustion engines"
+    }
+    {
+      "picker":"fishLake",
+      "regArea":"Fish Lake in Fremont County",
+      "creel":"3 Trout per day or in possession, no more than 1 over 16 inches",
+      "boats":"No internal combustion engines"
+    }
+    {
+      "picker":"graceLake",
+      "regArea":"Grace Lake in Big Horn County",
+      "creel":"2 Brook Trout per day or in possession",
+      "tackle":"Artificial flies and lures only"
+    }
+    {
+      "picker":"harringtonRes",
+      "regArea":"Harrington Reservoir in Big Horn County",
+      "boats":"No motors over 15 horsepower"
+    }
+    {
+      "picker":"lakeCameahwait",
+      "regArea":"Lake Cameahwait(Bass Lake) in Fremont County",
+      "creel":"2 Largemouth Bass per day or in possession. All bass between 10 and 15 inches released immediately, no more than one bass over 15 inches"
+    }
+    {
+      "picker":"lilyLake",
+      "regArea":"Lily Lake in Park County",
+      "boats":"No motors over 15 horsepower"
+    }
  ],
 
  [
