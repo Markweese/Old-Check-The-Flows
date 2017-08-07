@@ -97,9 +97,23 @@ function regPointPopup(){
 						currentObj = basinData[i][j];
             var currentKey = Object.keys(currentObj);
             for (x in currentObj) {
+              var currentKey = x;
+              var header = "";
+              
+              if(currentKey == "boats"){
+                header = "Boating Regulations";
+              } else if(currentKey == "creel"){
+                header = "Bag Limits";
+              } else if(currentKey == "other"){
+                header = "Additional Regulations";
+              } else if(currentKey == "tackle"){
+                header = "Fishing Tackle";
+              } else if(currentKey == "season"){
+                header = "Closures";
+              } else{header == ""}
+
 						  if(currentObj[x] != attribute && currentObj[x] != this.getAttribute("id") && currentObj[x] != "undefined"){
-              alert(currentKey[x]);
-              document.getElementById(attribute + "RiverAttributes").innerHTML += currentObj[x] + "<br><hr><br>";
+              document.getElementById(attribute + "RiverAttributes").innerHTML += "<h2>" + header + "</h2>" + currentObj[x] + "<br><hr><br>";
 							}
 					  }
 				  }
