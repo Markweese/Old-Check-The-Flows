@@ -127,6 +127,65 @@
     "creel":"2 Trout per day or in possession, return all trout less than 16 inches to the water immediately",
     "boats":"No internal combustion engines",
     "tackle":"Artificial flies and lures only"
+    },
+    {
+    "picker":"rennerRes",
+    "regArea":"Renner Reservoir in Bighorn County",
+    "creel":"6 Largemouth Bass per day or in possession, no more than 1 over 12 inches.",
+    "boats":"No motors over 15 horsepower"
+    },
+    {
+    "picker":"shellCreek",
+    "regArea":"Shell Creek Drainage upstream from the confluence with the Bighorn River in Big Horn County",
+    "creel":"6 Tout per day or in possession"
+    },
+    {
+      "picker":"sandMesa",
+      "regArea":"Sand Mesa Reservoirs No. 1 and 2 in Fremont County",
+      "boats":"No internal combustion engines"
+    },
+    {
+      "picker":"shoshoneLake",
+      "regArea":"Shoshone Lake and Shoshone Creek in Fremont County",
+      "creel":"6 Brook Trout per day or in possession",
+      "season":"June 15 - August 31"
+    },
+    {
+      "picker":"shoshoneRiver",
+      "regArea":"Shoshone River drainage streams from Buffalo Bill Dam downstream to Big Horn Lake in Big Horn and Park Counties",
+      "creel":"6 Trout per day or in possession, no more than 1 over 16 inches"
+    },
+    {
+      "picker":"southWorland",
+      "regArea":"South Worland Pond in Washakie County",
+      "boats":"No motorized boats"
+    },
+    {
+      "picker":"swampLake",
+      "regArea":"Swamp Lake in Park county",
+      "creel":"2 Trout per day or in possession",
+      "boats":"No internal combustion engines",
+      "tackle":"Artificial flies and lure only"
+    },
+    {
+      "picker":"upperBrooks",
+      "regArea":"Upper Brooks Lake in Fremont County",
+      "creel":"6 fish per day or in possession, no more than 2 over 12 inches"
+    },
+    {
+      "picker":"westNewton",
+      "regArea":"West Newton Lake in Park County",
+      "boats":"No motors over 15 horsepower"
+    },
+    {
+      "picker":"westTen",
+      "regArea":"West Ten Sleep Lake in Big Horn County",
+      "boats":"No motorized boats"
+    },
+    {
+      "picker":"windRiver",
+      "regArea":"Wind River Lake in Fremont County",
+      "boats":"No internal combustion engines"
     }
  ],
 
