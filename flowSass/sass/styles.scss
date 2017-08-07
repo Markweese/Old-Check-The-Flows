@@ -49,6 +49,7 @@ body {
 }
 h1{
   @include textStyle($font1);
+  line-height: 5px;
 }
 h2{
   @include textStyle($font2);
