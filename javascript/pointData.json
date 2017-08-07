@@ -294,7 +294,7 @@
    {
      "picker":"mcintoshPond",
      "regArea":"Mcintosh Pond 2 (Western Nuclear Pond) in Fremont County",
-     "boats":"No motorized boats",
+     "boats":"No motorized boats"
    },
    {
      "picker":"medicineBow",
@@ -391,5 +391,5 @@
      "regArea":"Wheatland Reservoir No. 3 Canal from the headgate in Reservoir No. 2 in Albany County",
      "boats":"No watercraft"
    }
-   ]
+  ]
 ]
