@@ -95,9 +95,10 @@ function regPointPopup(){
 				for(var j = 0; j < basinData[i].length; j++){
 					if(this.getAttribute("id") == basinData[i][j].picker){
 						currentObj = basinData[i][j];
-            var currentKey = Object.keys(currentObj)[1];
+            var currentKey = Object.keys(currentObj);
             for (x in currentObj) {
 						  if(currentObj[x] != attribute && currentObj[x] != this.getAttribute("id") && currentObj[x] != "undefined"){
+              alert(currentKey[x]);
               document.getElementById(attribute + "RiverAttributes").innerHTML += currentObj[x] + "<br><hr><br>";
 							}
 					  }
