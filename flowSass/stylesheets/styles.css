@@ -10,7 +10,7 @@ h1 {
   font-family: helvetica, sans-serif;
   text-align: center;
   line-height: 20px;
-  line-height: 15px;
+  line-height: 30px;
 }
 /* line 53, ../sass/styles.scss */
 h1.dataHead {
@@ -143,12 +143,13 @@ circle:hover {
 
 /* line 136, ../sass/styles.scss */
 .riverAttributes {
-  text-align: left;
+  text-align: center;
   background-color: #DDDDDD;
-  color: black;
+  color: #276272;
+  padding: 20px;
 }
 
-/* line 141, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .closeOut {
   font-size: 16px;
   font-weight: bold;
@@ -175,7 +176,7 @@ circle:hover {
   outline: none;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 .closeData {
   font-size: 16px;
   font-weight: bold;

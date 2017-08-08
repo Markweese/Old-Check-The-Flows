@@ -2,189 +2,189 @@
  [
    {"basinPicker":"basinTwo",
    "picker":"beckLake",
-   "regArea":"<h1>Beck Lake, New Cody Reservoir, and Markham Reservoir in Park County</h1>",
+   "regArea":"<h1 class=\"dataHead\">Beck Lake, New Cody Reservoir, and Markham Reservoir in Park County</h1>",
    "boats":"No internal combustion engines"
    },
 
    {"picker":"bigHorn",
-    "regArea":"<h1>Big Horn Lake downstream from Highway 14A in Big Horn County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Big Horn Lake downstream from Highway 14A in Big Horn County</h1>",
     "creel":"Trout - 5 per day or 10 in possession<br>Bass - 10 per day or 20 in possession<br>Walleye and Sauger - 6 per day or 12 in possession, no more than 3 can be Sauger<br>Channel Catfish - 6 per day or in possession<br>Burbot(ling) - 3 per day or in possession<br>Shovelnose Sturgeon - 3 per day or in possession",
     "other":"All walleye and sauger to be kept whole until off water and done fishing."},
 
    {"picker":"bigHornWind",
-    "regArea":"<h1>Bighorn and Wind River drainage lakes and streams in Big Horn, Fremont, Hot Springs, Park, and Washakie counties</h1>",
+    "regArea":"<h1 class=\"dataHead\">Bighorn and Wind River drainage lakes and streams in Big Horn, Fremont, Hot Springs, Park, and Washakie counties</h1>",
     "other":"All walleye and sauger to be kept whole until off water and done fishing.\n One inch piece of skin to be left for species identification while in transit or in the field"
   },
     {
     "picker":"buffaloBill",
-    "regArea":"<h1>Buffalo Bill Reservoir, excluding South Fork and Diamond Creek Dike Ponds in Park County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Buffalo Bill Reservoir, excluding South Fork and Diamond Creek Dike Ponds in Park County</h1>",
     "season":"April 1 - July 14 for areas lying west of Spring Creek up to Gibbs Bridge.",
     "creel":"Trout(excluding lakers) - 3 per day or in possession, no more than 2 being cutthroat, no more than 1 over 18 inches",
     "other":"Walleye designated as nongame fish, kill immediately"
     },
     {
     "picker":"clarksFork",
-    "regArea":"<h1>Clarks Fork From WY-MT state line downstream to the Shoshone National Forest Boundary in Park County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Clarks Fork From WY-MT state line downstream to the Shoshone National Forest Boundary in Park County</h1>",
     "tackle":"Artificial flies and lures only"
     },
     {
     "picker":"deaverRes",
-    "regArea":"<h1>Deaver Reservoir in Park County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Deaver Reservoir in Park County</h1>",
     "creel":"3 Walleye per day or in possession",
     "boats":"No motors over 15 horsepower"
     },
     {
       "picker":"eastForkWind",
-      "regArea":"<h1>East Fork of the Wind River drainage streams upstream from the confluence from the Wind River, including Bear Creek and Wiggins Fork, in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">East Fork of the Wind River drainage streams upstream from the confluence from the Wind River, including Bear Creek and Wiggins Fork, in Fremont County</h1>",
       "creel":"3 Trout per day or in possession, no more than 1 over 16 inches, all Cutthroat released to water immediately",
       "tackle":"Artificial flies and lures only"
     },
     {
       "picker":"eastNewton",
-      "regArea":"<h1>East Newton Lake in Park County</h1>",
+      "regArea":"<h1 class=\"dataHead\">East Newton Lake in Park County</h1>",
       "tackle":"Artificial flies and lures only",
       "boats":"No motors over 15 horsepower",
       "other":"All trout released to water immediately"
     },
     {
       "picker":"fiddlersLake",
-      "regArea":"<h1>Fiddlers Lake in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Fiddlers Lake in Fremont County</h1>",
       "boats":"No internal combustion engines"
     },
     {
       "picker":"fishLake",
-      "regArea":"<h1>Fish Lake in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Fish Lake in Fremont County</h1>",
       "creel":"3 Trout per day or in possession, no more than 1 over 16 inches",
       "boats":"No internal combustion engines"
     },
     {
       "picker":"graceLake",
-      "regArea":"<h1>Grace Lake in Big Horn County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Grace Lake in Big Horn County</h1>",
       "creel":"2 Brook Trout per day or in possession",
       "tackle":"Artificial flies and lures only"
     },
     {
       "picker":"harringtonRes",
-      "regArea":"<h1>Harrington Reservoir in Big Horn County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Harrington Reservoir in Big Horn County</h1>",
       "boats":"No motors over 15 horsepower"
     },
     {
       "picker":"lakeCameahwait",
-      "regArea":"<h1>Lake Cameahwait(Bass Lake) in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Lake Cameahwait(Bass Lake) in Fremont County</h1>",
       "creel":"2 Largemouth Bass per day or in possession. All bass between 10 and 15 inches released immediately, no more than one bass over 15 inches"
     },
     {
       "picker":"lilyLake",
-      "regArea":"<h1>Lily Lake in Park County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Lily Lake in Park County</h1>",
       "boats":"No motors over 15 horsepower"
     },
     {
       "picker":"littleMoose",
-      "regArea":"<h1>Little Moose Lake in Park County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Little Moose Lake in Park County</h1>",
       "creel":"2 Trout per day or in possession",
       "tackle":"Artificial flies and lures only"
     },
     {
       "picker":"luceRes",
-      "regArea":"<h1>Luce Reservoir in Park County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Luce Reservoir in Park County</h1>",
       "tackle":"Artificial flies and lures only",
       "other":"All Trout to be released immediately"
     },
     {
       "picker":"luckeyPond",
-      "regArea":"<h1>Luckey Pond(Chittim Reservoir) in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Luckey Pond(Chittim Reservoir) in Fremont County</h1>",
       "boats":"No internal combustion engines",
       "other":"Closed to ice fishing"
     },
     {
       "picker":"middleDepression",
-      "regArea":"<h1>Middle Depression Reservoir in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Middle Depression Reservoir in Fremont County</h1>",
       "creel":"3 Trout per day or in possession, no more than 1 over 16 inches"
     },
     {
     "picker":"middleFork",
-    "regArea":"<h1>Middle Fork of the Popo Agie River from the \"Rise\" downstream to the Bridge on the Sinks Canyon Road in Fremont County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Middle Fork of the Popo Agie River from the \"Rise\" downstream to the Bridge on the Sinks Canyon Road in Fremont County</h1>",
     "season":"Closed throughout year"
     },
     {
     "picker":"newtownToGibbs",
-    "regArea":"<h1>North Fork of the Shoshone River drainage from Newton Creek downstream to Gibbs Bridge(including Newton Creek) in Park County</h1>",
+    "regArea":"<h1 class=\"dataHead\">North Fork of the Shoshone River drainage from Newton Creek downstream to Gibbs Bridge(including Newton Creek) in Park County</h1>",
     "season":"July 1 - March 30"
     },
     {
     "picker":"gibbsUpstream",
-    "regArea":"<h1>North Fork of the Shoshone River drainage upstream of Gibbs Bridge in Park County</h1>",
+    "regArea":"<h1 class=\"dataHead\">North Fork of the Shoshone River drainage upstream of Gibbs Bridge in Park County</h1>",
     "creel":"3 Trout per day or in possession, no more than 2 Cutthroat, no more than 1 Trout over 18 inches"
     },
     {
     "picker":"nowood",
-    "regArea":"<h1>Nowood River drainage streams upstream from the confluence with the Bighorn River including Paintrock and Tensleep Creeks in Big Horn, Johnson, and Washakie counties</h1>",
+    "regArea":"<h1 class=\"dataHead\">Nowood River drainage streams upstream from the confluence with the Bighorn River including Paintrock and Tensleep Creeks in Big Horn, Johnson, and Washakie counties</h1>",
     "creel":"6 Trout per day or in possession"
     },
     {
     "picker":"pelhamLake",
-    "regArea":"<h1>Pelham Lake in Fremont County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Pelham Lake in Fremont County</h1>",
     "creel":"2 Trout per day or in possession, return all trout less than 16 inches to the water immediately",
     "boats":"No internal combustion engines",
     "tackle":"Artificial flies and lures only"
     },
     {
     "picker":"rennerRes",
-    "regArea":"<h1>Renner Reservoir in Bighorn County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Renner Reservoir in Bighorn County</h1>",
     "creel":"6 Largemouth Bass per day or in possession, no more than 1 over 12 inches.",
     "boats":"No motors over 15 horsepower"
     },
     {
     "picker":"shellCreek",
-    "regArea":"<h1>Shell Creek Drainage upstream from the confluence with the Bighorn River in Big Horn County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Shell Creek Drainage upstream from the confluence with the Bighorn River in Big Horn County</h1>",
     "creel":"6 Tout per day or in possession"
     },
     {
       "picker":"sandMesa",
-      "regArea":"<h1>Sand Mesa Reservoirs No. 1 and 2 in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Sand Mesa Reservoirs No. 1 and 2 in Fremont County</h1>",
       "boats":"No internal combustion engines"
     },
     {
       "picker":"shoshoneLake",
-      "regArea":"<h1>Shoshone Lake and Shoshone Creek in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Shoshone Lake and Shoshone Creek in Fremont County</h1>",
       "creel":"6 Brook Trout per day or in possession",
       "season":"June 15 - August 31"
     },
     {
       "picker":"shoshoneRiver",
-      "regArea":"<h1>Shoshone River drainage streams from Buffalo Bill Dam downstream to Big Horn Lake in Big Horn and Park Counties</h1>",
+      "regArea":"<h1 class=\"dataHead\">Shoshone River drainage streams from Buffalo Bill Dam downstream to Big Horn Lake in Big Horn and Park Counties</h1>",
       "creel":"6 Trout per day or in possession, no more than 1 over 16 inches"
     },
     {
       "picker":"southWorland",
-      "regArea":"<h1>South Worland Pond in Washakie County</h1>",
+      "regArea":"<h1 class=\"dataHead\">South Worland Pond in Washakie County</h1>",
       "boats":"No motorized boats"
     },
     {
       "picker":"swampLake",
-      "regArea":"<h1>Swamp Lake in Park county</h1>",
+      "regArea":"<h1 class=\"dataHead\">Swamp Lake in Park county</h1>",
       "creel":"2 Trout per day or in possession",
       "boats":"No internal combustion engines",
       "tackle":"Artificial flies and lure only"
     },
     {
       "picker":"upperBrooks",
-      "regArea":"<h1>Upper Brooks Lake in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Upper Brooks Lake in Fremont County</h1>",
       "creel":"6 fish per day or in possession, no more than 2 over 12 inches"
     },
     {
       "picker":"westNewton",
-      "regArea":"<h1>West Newton Lake in Park County</h1>",
+      "regArea":"<h1 class=\"dataHead\">West Newton Lake in Park County</h1>",
       "boats":"No motors over 15 horsepower"
     },
     {
       "picker":"westTen",
-      "regArea":"<h1>West Ten Sleep Lake in Big Horn County</h1>",
+      "regArea":"<h1 class=\"dataHead\">West Ten Sleep Lake in Big Horn County</h1>",
       "boats":"No motorized boats"
     },
     {
       "picker":"windRiver",
-      "regArea":"<h1>Wind River Lake in Fremont County</h1>",
+      "regArea":"<h1 class=\"dataHead\">Wind River Lake in Fremont County</h1>",
       "boats":"No internal combustion engines"
     }
  ],
@@ -192,184 +192,184 @@
  [
   {"basinPicker":"basinFive",
   "picker":"AM",
-  "regArea":"<h1>A and M Reservoir in Sweetwater County</h1>",
+  "regArea":"<h1 class=\"dataHead\">A and M Reservoir in Sweetwater County</h1>",
   "boats":"No internal combustion engines"
   },
 
   {"picker":"alcovaRes",
-   "regArea":"<h1>Alcova Reservoir in Natrona County</h1>",
+   "regArea":"<h1 class=\"dataHead\">Alcova Reservoir in Natrona County</h1>",
    "creel":"12 Walleye per day or in possession, regulations on Walleye taken by spear gun \n not applicable"
    },
 
   {"picker":"alsopLake",
-    "regArea":"<h1>Alsop Lake in Albany County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Alsop Lake in Albany County</h1>",
     "creel":"2 Trout per day or in posession. All Trout less than 16 inches to be released immediately",
     "tackle":"Artificial flies and lures only"
     },
 
   {"picker":"bryanStock",
-   "regArea":"<h1>Bryan Stock Trail Pond In Natrona County</h1>",
+   "regArea":"<h1 class=\"dataHead\">Bryan Stock Trail Pond In Natrona County</h1>",
    "boats":"No internal combustion engines"
    },
 
    {"picker":"bumpSullivan",
-    "regArea":"<h1>Bump Sullivan Reservoir in Goshen County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Bump Sullivan Reservoir in Goshen County</h1>",
     "season":"November 1 - February 15"
     },
 
    {"picker":"drainage6",
-    "regArea":"<h1>Crow Creek, Dale Creek, Horse Creek, Loedgepole Creek drainages on the Medicine Bow-Routt National Forest upstream from forest boundary in Albany County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Crow Creek, Dale Creek, Horse Creek, Loedgepole Creek drainages on the Medicine Bow-Routt National Forest upstream from forest boundary in Albany County</h1>",
     "creel":"6 Brook Trout per day or in possession"
     },
 
    {"picker":"crystalRes",
-    "regArea":"<h1>Crystal Reservoir in Laramie County</h1>",
+    "regArea":"<h1 class=\"dataHead\">Crystal Reservoir in Laramie County</h1>",
     "boats":"No motors over 15 horsepower"
    },
    {
      "picker":"domeRock",
-     "regArea":"<h1>Dome Rock Reservoir in Carbon County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Dome Rock Reservoir in Carbon County</h1>",
      "creel":"1 Trout per day or in possession, all trout less than 20 inches released immediately",
      "tackle":"Artificial flies and lures only"
    },
    {
      "picker":"ednessKimball",
-     "regArea":"<h1>Edness Kimball Wilkins State Park, all ponds within the park in Natrona County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Edness Kimball Wilkins State Park, all ponds within the park in Natrona County</h1>",
      "season":"Closed to fishing",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"encampmentRiver",
-     "regArea":"<h1>Encampment River, from Highway 230 at Riverside downstream to its confluence with the North Platte River in Carbon County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Encampment River, from Highway 230 at Riverside downstream to its confluence with the North Platte River in Carbon County</h1>",
      "tackle":"Artificial flies and lures only"
    },
    {
      "picker":"festoLake",
-     "regArea":"<h1>Fest Lake in Platte County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Fest Lake in Platte County</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"glendoRes",
-     "regArea":"<h1>Glendo Reservoir including the North Platte River downstream from the bridge on Highway 319 (near Orin Junction) to  Glendo Reservoir in Platte County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Glendo Reservoir including the North Platte River downstream from the bridge on Highway 319 (near Orin Junction) to  Glendo Reservoir in Platte County</h1>",
      "creel":"All Walleye less than 15 inches released to water immediately",
      "other":"All Walleye to be kept whole until off the water for the day"
    },
    {
      "picker":"grayrocksRes",
-     "regArea":"<h1>Grayrocks Reservoir in Platte County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Grayrocks Reservoir in Platte County</h1>",
      "creel":"3 Bass per day or in possession, no more than 1 over 12 inches",
      "season":"Area between spillway and buoys closed to boats and fishing all year"
    },
    {
      "picker":"hawkSprings",
-     "regArea":"<h1>Hawk Springs Reservoir in Goshen County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Hawk Springs Reservoir in Goshen County</h1>",
      "boats":"No boats from December 1 - February 15"
    },
    {
      "picker":"huckFinn",
-     "regArea":"<h1>Huck Finn Pond in Albany County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Huck Finn Pond in Albany County</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"johnsonCreek",
-     "regArea":"<h1>Johnson Creek Reservoir in Albany County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Johnson Creek Reservoir in Albany County</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"lakeAbsarraca",
-     "regArea":"<h1>Lake Absarraca (Country Club Lake) in Laramie County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Lake Absarraca (Country Club Lake) in Laramie County</h1>",
      "creel":"All Bass less than 15 inches to be released to water immediately",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"leazenbyLake",
-     "regArea":"<h1>Leazenby Lake in Albany County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Leazenby Lake in Albany County</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"lowerNorth",
-     "regArea":"<h1>Lower North Crow Reservoir (North Crow Diversion Reservoir) in Laramie County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Lower North Crow Reservoir (North Crow Diversion Reservoir) in Laramie County</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"mcintoshPond",
-     "regArea":"<h1>Mcintosh Pond 2 (Western Nuclear Pond) in Fremont County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Mcintosh Pond 2 (Western Nuclear Pond) in Fremont County</h1>",
      "boats":"No motorized boats"
    },
    {
      "picker":"medicineBow",
-     "regArea":"<h1>Medicine Bow National Forest including all lakes within the boundaries of Medicine Bow National Forest, except Sand Lake, Turpin Reservoir, Lake Owen, Rob Roy Reservoir and Hog Park Reservoir, in Carbon and Albany counties</h1>",
+     "regArea":"<h1 class=\"dataHead\">Medicine Bow National Forest including all lakes within the boundaries of Medicine Bow National Forest, except Sand Lake, Turpin Reservoir, Lake Owen, Rob Roy Reservoir and Hog Park Reservoir, in Carbon and Albany counties</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"northPlatte",
-     "regArea":"<h1>North Platte River from Co-WY state line downstream to the Saratoga Inn Bridge in Carbon County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte River from Co-WY state line downstream to the Saratoga Inn Bridge in Carbon County</h1>",
      "boats":"No motorized boats",
      "tackle":"Artificial flies and lures only"
    },
    {
      "picker":"northPlatteKortes",
-     "regArea":"<h1>North Platte River from Kortes Dam downstream to the confluence with Sage Creek (Miracle Mile) in Carbon County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte River from Kortes Dam downstream to the confluence with Sage Creek (Miracle Mile) in Carbon County</h1>",
      "creel":"Trout - 3 per day or in possession, no more than 1 over 16 inches<br>Walleye - 12 per day or in possession"
    },
    {
      "picker":"northPlattePathfinder",
-     "regArea":"<h1>North Platte River from Pathfinder Dam downstream 0.8 miles to the vehicle bridge in Natrona County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte River from Pathfinder Dam downstream 0.8 miles to the vehicle bridge in Natrona County</h1>",
      "creel":"1 Trout per day or in possession"
    },
    {
      "picker":"northPlatteAlcova",
-     "regArea":"<h1>North Platte River from vehicle bridge 0.8 miles downstream from Pathfinder to Alcova Reservoir in Natrona County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte River from vehicle bridge 0.8 miles downstream from Pathfinder to Alcova Reservoir in Natrona County</h1>",
      "creel":"1 Tour per day or in possession, all trout under 20 inches released immediately",
      "tackle":"Artificial flies and lures only"
    },
    {
      "picker":"northPlatteGray",
-     "regArea":"<h1>North Platte River from Alcova Dam downstream to Gray Reef Reservoir in Natrona County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte River from Alcova Dam downstream to Gray Reef Reservoir in Natrona County</h1>",
      "creel":"6 Trout per day or in possession"
    },
    {
      "picker":"northPlatteLusby",
-     "regArea":"<h1>North Platte River from Gray Reef Dam downstream 8 Miles to the upstream boundary of the Lusby Public Fishing Area in Natrona County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte River from Gray Reef Dam downstream 8 Miles to the upstream boundary of the Lusby Public Fishing Area in Natrona County</h1>",
      "creel":"1 Trout per day or in possession, all trout under 20 inches released to water immediately",
      "season":"Water between closed area signs at gauge cable crossings closed from April 1 - April 30",
      "tackle":"Artificial flies and lures only"
    },
    {
      "picker":"northPlatteDrainage",
-     "regArea":"<h1>North Platte River drainage streams from Bessemer Bend Bridge (Natrona County Road 308) downstream to Geurnsey Dam in Albany, Converse, Natrona, and Platte counties</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte River drainage streams from Bessemer Bend Bridge (Natrona County Road 308) downstream to Geurnsey Dam in Albany, Converse, Natrona, and Platte counties</h1>",
      "creel":"6 Trout per day or in possession, 1 over 20 inches"
    },
    {
      "picker":"daveJohnston",
-     "regArea":"<h1>North Platte between Dave Johnston Power Plant Public Access and the Dave Johnston Power Plant in Converse County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte between Dave Johnston Power Plant Public Access and the Dave Johnston Power Plant in Converse County</h1>",
      "boats":"No watercraft"
    },
    {
      "picker":"glendoPlant",
-     "regArea":"<h1>North Platte between Glendo Dam and Glendo Power Plant in Platte County</h1>",
+     "regArea":"<h1 class=\"dataHead\">North Platte between Glendo Dam and Glendo Power Plant in Platte County</h1>",
      "boats":"No watercraft"
    },
    {
      "picker":"packersLake",
-     "regArea":"<h1>Packers Lake in Goshen County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Packers Lake in Goshen County</h1>",
      "creel":"All Bass less than 15 inches to be released immediately",
      "boats":"No motors over 15 horsepower"
    },
    {
      "picker":"rawlinsCity",
-     "regArea":"<h1>Rawlins City Reservoir in Carbon County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Rawlins City Reservoir in Carbon County</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"sloansLake",
-     "regArea":"<h1>Sloans Lake in Laramie County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Sloans Lake in Laramie County</h1>",
      "creel":"All Bass less than 15 inches to be released immediately",
      "boats":"No motors over 15 horsepower"
    },
    {
      "picker":"southSpringer",
-     "regArea":"<h1>South Springer Reservoir in Goshen County</h1>",
+     "regArea":"<h1 class=\"dataHead\">South Springer Reservoir in Goshen County</h1>",
      "boats":"No internal combustion engines"
    },
    {
@@ -378,17 +378,17 @@
    },
    {
      "picker":"turpinRes",
-     "regArea":"<h1>Turpin Reservoir in Carbon County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Turpin Reservoir in Carbon County</h1>",
      "boats":"No motors over 15 horsepower"
    },
    {
      "picker":"northCrow",
-     "regArea":"<h1>Upper North Crow Reservoir in Laramie and Albany counties</h1>",
+     "regArea":"<h1 class=\"dataHead\">Upper North Crow Reservoir in Laramie and Albany counties</h1>",
      "boats":"No internal combustion engines"
    },
    {
      "picker":"wheatlandRes",
-     "regArea":"<h1>Wheatland Reservoir No. 3 Canal from the headgate in Reservoir No. 2 in Albany County</h1>",
+     "regArea":"<h1 class=\"dataHead\">Wheatland Reservoir No. 3 Canal from the headgate in Reservoir No. 2 in Albany County</h1>",
      "boats":"No watercraft"
    }
   ]
