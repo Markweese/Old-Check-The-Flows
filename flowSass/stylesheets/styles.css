@@ -16,9 +16,10 @@ h1 {
 h1.dataHead {
   background-color: #276272;
   color: #DDDDDD;
+  padding: 10px;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 h2 {
   font-size: 20px;
   font-weight: bold;
@@ -27,7 +28,7 @@ h2 {
   line-height: 20px;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 62, ../sass/styles.scss */
 h3, p {
   font-size: 16px;
   font-weight: bold;
@@ -36,7 +37,7 @@ h3, p {
   line-height: 20px;
 }
 
-/* line 64, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 img {
   width: 10%;
   height: auto;
@@ -44,7 +45,7 @@ img {
   margin: auto;
   padding-top: 10px;
 }
-/* line 70, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 img.zonePhoto {
   width: auto;
   height: 90%;
@@ -54,26 +55,26 @@ img.zonePhoto {
   left: 10px;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 path {
   stroke-width: 3px;
 }
-/* line 76, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 path:hover {
   stroke-width: 10px;
 }
 
-/* line 80, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 circle {
   stroke-width: 2px;
   stroke: #444444;
 }
-/* line 83, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 circle:hover {
   stroke: #22AADD;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .header {
   margin-bottom: 0px;
   padding-bottom: 10px;
@@ -82,7 +83,7 @@ circle:hover {
   border: none;
 }
 
-/* line 94, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .map-box {
   width: 50%;
   display: block;
@@ -92,7 +93,7 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 103, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .river-box {
   position: fixed;
   display: none;
@@ -104,7 +105,7 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 112, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .zoneInterface {
   position: fixed;
   display: none;
@@ -115,7 +116,7 @@ circle:hover {
   left: 0px;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 .zoneSVG {
   width: auto;
   height: 90%;
@@ -125,7 +126,7 @@ circle:hover {
   left: 10px;
 }
 
-/* line 123, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .dataPane {
   position: fixed;
   display: none;
@@ -141,7 +142,7 @@ circle:hover {
   overflow-y: scroll;
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .riverAttributes {
   text-align: center;
   background-color: #DDDDDD;
@@ -149,7 +150,7 @@ circle:hover {
   padding: 20px;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .closeOut {
   font-size: 16px;
   font-weight: bold;
@@ -176,7 +177,7 @@ circle:hover {
   outline: none;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .closeData {
   font-size: 16px;
   font-weight: bold;
