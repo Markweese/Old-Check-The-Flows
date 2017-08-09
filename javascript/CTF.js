@@ -78,7 +78,6 @@ function mouseOutBasin() {
 	text = "";
 }
 
-//find a way to refer to images in a variable that responds to the current id.
 function clickBasin(){
 	  attribute = this.getAttribute("id");
 		document.getElementById(attribute + "Pane").style.display = "inline-block";
@@ -91,15 +90,17 @@ function regPointPopup(){
 	document.getElementById(attribute + "DataPane").style.display = "block";
 
 	for (var i = 0; i < basinData.length; i++){
+//this if statement selects the array that corresponds to the attribute value passed by our basin click
 			if (basinData[i][0].basinPicker == attribute){
 				for(var j = 0; j < basinData[i].length; j++){
 					if(this.getAttribute("id") == basinData[i][j].picker){
 						currentObj = basinData[i][j];
+//currentKey lets us know which key we are assigning attribute values to at this particular part of the loop
             var currentKey = Object.keys(currentObj);
             for (x in currentObj) {
               var currentKey = x;
               var header = "";
-
+//this list of if statements alters the section header based on the current key
               if(currentKey == "boats"){
                 header = "Boating Regulations";
               } else if(currentKey == "creel"){
@@ -111,7 +112,8 @@ function regPointPopup(){
               } else if(currentKey == "season"){
                 header = "Closures";
               } else{header == ""}
-
+/*this final if statement stipulates that key value pairs that are not empty, or
+containing data only needed for JS functions, should be printed out with it's corresponding header*/
 						  if(currentObj[x] != attribute && currentObj[x] != this.getAttribute("id") && currentObj[x] != "undefined"){
               document.getElementById(attribute + "RiverAttributes").innerHTML += "<h2>" + header + "</h2>" + currentObj[x] + "<br><hr><br>";
 							}
@@ -123,7 +125,8 @@ function regPointPopup(){
 }
 
 
-
+/*these functions close data panes and clear all variable to avoid
+unwanted concatenation*/
 function closeOut(){
 
 	document.getElementById(attribute + "Pane").style.display = "none";

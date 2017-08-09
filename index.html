@@ -15,6 +15,10 @@
   <p id="rivers"></p>
 </div>
 
+
+<!--this svg contains paths that listen for hovers and clicks. Hovers alter our JS 'text' value
+and updates the riverList popup. Clicks update our JS 'attribute' variable and allows our script
+to access and alter the proper 'riverAttributes' elements-->
 <div class="map-box">
 	<h1>Find Your Basin:</h1>
 	<p>mouse over to search and click the basin containing your river</p>
@@ -125,6 +129,8 @@
     </g>
 </svg>
 
+<!--the following svgs contain a set of circles that act as buttons for each regulation point
+event listeners are added based on class name and ids allow js files to access the proper elements-->
 <div id="basinOnePane" class="zoneInterface">
   <div id="basinOneDataPane" class="dataPane">
     <button class="closeData" onclick="closeData()">Close</button>
