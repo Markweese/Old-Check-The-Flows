@@ -500,7 +500,8 @@
      "creel":"6 Brook Trout per day or in possession"
    },
    {
-     "picker":"Salt Creek (Thomas Fork) drainage (including Raymond Creek) upstream from the Wyoming-Idaho state line in Lincoln County",
+     "picker":"saltCreek",
+     "regArea":"Salt Creek (Thomas Fork) drainage (including Raymond Creek) upstream from the Wyoming-Idaho state line in Lincoln County",
      "tackle":"Artificial flies and lures only"
    },
    {
