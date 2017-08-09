@@ -5,7 +5,7 @@
   },
   {
     "picker":"flatCreekUpper",
-    "regArea":"Flat Creek on the National Elk Refuge from McBride Bridge downstream to Posted Boundary",
+    "regArea":"<h1 class=\"dataHead\">Flat Creek on the National Elk Refuge from McBride Bridge downstream to Posted Boundary</h1>",
     "creel":"6 Trout per day or in possession, only 1 can be Cutthroat, all Cutthroat under 20 released to water immediately",
     "season":"November 1 - July 31",
     "tackle":"Artificial flies and lures only",
@@ -13,42 +13,42 @@
   },
   {
     "picker":"flatCreekLower",
-    "regArea":"Flat Creek from the posted boundary on the National Elk Refuge downstream to the west boundary of the National Elk Refuge in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Flat Creek from the posted boundary on the National Elk Refuge downstream to the west boundary of the National Elk Refuge in Teton County</h1>",
     "season":"Closed"
   },
   {
     "picker":"greysRiver",
-    "regArea":"Greys River proper from Corral Creek downstream to the Murphy Creek Bridge in Lincoln County",
+    "regArea":"<h1 class=\"dataHead\">Greys River proper from Corral Creek downstream to the Murphy Creek Bridge in Lincoln County</h1>",
     "tackle":"Artificial flies and lures only"
   },
   {
     "picker":"grosVentre",
-    "regArea":"Gros Ventre River from the eastern boundary of the National Elk Refuge downstream to the U.S. Highway 26/89/191 Bridge in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Gros Ventre River from the eastern boundary of the National Elk Refuge downstream to the U.S. Highway 26/89/191 Bridge in Teton County</h1>",
     "season":"December 1 - March 31"
   },
   {
     "picker":"jacksonLake",
-    "regArea":"Jackson Lake in Grand Teton National Park in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Jackson Lake in Grand Teton National Park in Teton County</h1>",
     "season":"October 1 - October 31"
   },
   {
     "picker":"jennyLake",
-    "regArea":"Jenny Lake in Grand Teton National Park in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Jenny Lake in Grand Teton National Park in Teton County</h1>",
     "boats":"No motors over 10 horsepower"
   },
   {
     "picker":"lakeWoods",
-    "regArea":"Lake of the Woods in Fremont County",
+    "regArea":"<h1 class=\"dataHead\">Lake of the Woods in Fremont County</h1>",
     "boats":"No internal combustion engines"
   },
   {
     "picker":"nowlinCreek",
-    "regArea":"Nowlin Creek on the National Elk Refuge from \"closed area\" signs in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Nowlin Creek on the National Elk Refuge from \"closed area\" signs in Teton County</h1>",
     "season":"Closed"
   },
   {
     "picker":"nowlinCreekLower",
-    "regArea":"Nowlin Creek on the National Elk Refuge from \"closed area\" signs downstream to its confluence with Flat Creek in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Nowlin Creek on the National Elk Refuge from \"closed area\" signs downstream to its confluence with Flat Creek in Teton County</h1>",
     "creel":"6 Trout per day or in possession, only 1 can be Cutthroat, all Cutthroat under 20 inches released to water immediately",
     "season":"November 1 - July 31",
     "tackle":"Artificial flies only",
@@ -56,60 +56,60 @@
   },
   {
     "picker":"pacificCreek",
-    "regArea":"Pacific Creek downstream from the wilderness boundary to the confluence with the Snake River in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Pacific Creek downstream from the wilderness boundary to the confluence with the Snake River in Teton County</h1>",
     "tackle":"Artificial flies and lures only"
   },
   {
     "picker":"saltRiverDrainage",
-    "regArea":"Salt River drainage upstream from Upper Narrows Bridge (Wyoming Highway 238) in Lincoln County",
+    "regArea":"<h1 class=\"dataHead\">Salt River drainage upstream from Upper Narrows Bridge (Wyoming Highway 238) in Lincoln County</h1>",
     "creel":"All Trout released to water immediately",
     "season":"January 1 - October 31",
     "tackle":"Artificial flies and lures only"
   },
   {
     "picker":"saltRiver",
-    "regArea":"Salt River from 1/4 mile below the Highway 238 Bridge downstream to the Diversion (Murray) Fishing Access as posted in Lincoln County",
+    "regArea":"<h1 class=\"dataHead\">Salt River from 1/4 mile below the Highway 238 Bridge downstream to the Diversion (Murray) Fishing Access as posted in Lincoln County</h1>",
     "tackle":"Artificial flies and lures only"
   },
   {
     "picker":"snakeYellowToJackson",
-    "regArea":"Snake River proper from Yellowstone National Park boundary downstream to Jackson Lake in Teton County",
+    "regArea":"<h1 class=\"dataHead\">Snake River proper from Yellowstone National Park boundary downstream to Jackson Lake in Teton County</h1>",
     "creel":"All Cutthroat released to water immediately",
     "season":"April 1 - October 31"
   },
   {
     "picker":"snakeJacksonDam",
-    "regArea":"Snake River 150 feet below Jackson Lake Dam",
+    "regArea":"<h1 class=\"dataHead\">Snake River 150 feet below Jackson Lake Dam</h1>",
     "season":"Closed"
   },
   {
     "picker":"snakeGrandTeton",
-    "regArea":"Snake River from 150 feet below Jackson Lake Dam to gauging station 1,000 feet below Jackson Lake Dam",
+    "regArea":"<h1 class=\"dataHead\">Snake River from 150 feet below Jackson Lake Dam to gauging station 1,000 feet below Jackson Lake Dam</h1>",
     "creel":"All Cutthroat released to water immediately",
     "season":"April 1 - October 31",
     "tackle":"Use or possession of fish, fish parts, or fish eggs for bait prohibited"
   },
   {
     "picker":"snakeToWilson",
-    "regArea":"Snake River from 1,000 feet below Jackson Lake Dam to Wilson Bridge",
+    "regArea":"<h1 class=\"dataHead\">Snake River from 1,000 feet below Jackson Lake Dam to Wilson Bridge</h1>",
     "creel":"All Cutthroat released to water immediately",
     "season":"April 1 - October 31",
     "tackle":"Artificial flies and lures only"
   },
   {
     "picker":"snakeToSheep",
-    "regArea":"Snake River From Grand Teton Park Boundary to Sheep Gulch Boat Ramp",
+    "regArea":"<h1 class=\"dataHead\">Snake River From Grand Teton Park Boundary to Sheep Gulch Boat Ramp</h1>",
     "boats":"No personal watercraft, non-personla watercraft with motors under 115 horsepower permitted from South Park Bridge to West Table Boat Ramp from Labor Day to March 31"
   },
   {
     "picker":"snakeToPalisades",
-    "regArea":"Snake River From Wilson Bridge downstream to Palisades Reservoir in Lincoln and Teton Counties",
+    "regArea":"<h1 class=\"dataHead\">Snake River From Wilson Bridge downstream to Palisades Reservoir in Lincoln and Teton Counties</h1>",
     "creel":"All Cutthroat released to water immediately",
     "season":"April 1 - October 31"
   },
   {
     "picker":"sodaLake",
-    "regArea":"Soda Lake in the Gros Ventre Drainage",
+    "regArea":"<h1 class=\"dataHead\">Soda Lake in the Gros Ventre Drainage</h1>",
     "creel":"1 Trout per day or in possession, all Trout less than 20 inches released to water immediately",
     "tackle":"Artificial flies and lures only"
   }
