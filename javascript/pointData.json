@@ -313,7 +313,7 @@
      "basinPicker":"basinFour",
      "picker":"bearRiver",
      "regArea":"Bear River drainage streams, including Smiths Fork and Thomas Fork",
-     "creel":"6 Trout per day or in possession, no more than 3 Cutthroat, no more than 1 over 16 inches",
+     "creel":"6 Trout per day or in possession, no more than 3 Cutthroat, no more than 1 over 16 inches"
    },
    {
      "picker":"boulderCreek",
@@ -383,7 +383,7 @@
    {
      "picker":"halfmoonLake",
      "regArea":"Halfmoon Lake in Sublette County",
-     "creel":"2 Lake Trout per day or in possession, no more than 1 over 24 inches",
+     "creel":"2 Lake Trout per day or in possession, no more than 1 over 24 inches"
    },
    {
      "picker":"hamsFork",
@@ -460,7 +460,7 @@
    {
      "picker":"newForkRiver",
      "regArea":"New Fork River Above the New Fork Lakes",
-     "season":"September 1 - April 30",
+     "season":"September 1 - April 30"
    },
    {
      "picker":"newForkMesa",
