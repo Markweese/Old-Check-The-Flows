@@ -14,7 +14,7 @@
   {
     "picker":"flatCreekLower",
     "regArea":"<h1 class=\"dataHead\">Flat Creek from the posted boundary on the National Elk Refuge downstream to the west boundary of the National Elk Refuge in Teton County</h1>",
-    "season":"Closed"
+    "season":"Closed all year"
   },
   {
     "picker":"greysRiver",
@@ -44,7 +44,7 @@
   {
     "picker":"nowlinCreek",
     "regArea":"<h1 class=\"dataHead\">Nowlin Creek on the National Elk Refuge from \"closed area\" signs in Teton County</h1>",
-    "season":"Closed"
+    "season":"Closed all year"
   },
   {
     "picker":"nowlinCreekLower",
@@ -80,7 +80,7 @@
   {
     "picker":"snakeJacksonDam",
     "regArea":"<h1 class=\"dataHead\">Snake River 150 feet below Jackson Lake Dam</h1>",
-    "season":"Closed"
+    "season":"Closed all year"
   },
   {
     "picker":"snakeGrandTeton",
@@ -222,7 +222,7 @@
     {
     "picker":"middleFork",
     "regArea":"<h1 class=\"dataHead\">Middle Fork of the Popo Agie River from the \"Rise\" downstream to the Bridge on the Sinks Canyon Road in Fremont County</h1>",
-    "season":"Closed throughout year"
+    "season":"Closed all year"
     },
     {
     "picker":"newtownToGibbs",
@@ -307,6 +307,244 @@
     }
  ],
 
+
+ [
+   {
+     "basinPicker":"basinFour",
+     "picker":"bearRiver",
+     "regArea":"Bear River drainage streams, including Smiths Fork and Thomas Fork",
+     "creel":"6 Trout per day or in possession, no more than 3 Cutthroat, no more than 1 over 16 inches",
+   },
+   {
+     "picker":"boulderCreek",
+     "regArea":"Boulder Creek from Boulder Lake Inlet to the confluence of the North Fork of Boulder Creek",
+     "season":"April 1 - June 30"
+   },
+   {
+     "picker":"burntLake",
+     "regArea":"Burnt Lake in Sublette County",
+     "season":"November 15 - April 30"
+   },
+   {
+     "picker":"currantCreek",
+     "regArea":"Currant Creek in Sweetwater County",
+     "creel":"All Cutthroat released to water immediately",
+     "season":"April 1 - June 30",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"dollarLake",
+     "regArea":"Dollar Lake in Sublette County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"fallCreek",
+     "regArea":"Fall Creek in Sublette County",
+     "season":"May 1 - June 30 from Burnt Lake down 500 yards"
+   },
+   {
+     "picker":"fishCreek",
+     "regArea":"Fish Creek drainage (of South Piney Creek) on the Bridger-Teton National Forest upstream from the forest boundary in Sublette County",
+     "tackle":"Artificial flies and lure only"
+   },
+   {
+     "picker":"flamingGorge",
+     "regArea":"Flaming Gorge Reservoir in Sweetwater County",
+     "creel":"Trout - 4 per day or in possession<br>Kokanee - 3 per day or in possession<br>Lake Trout - 8 per day or in possession, no more than 1 over 28 inches<br>Smallmouth Bass - Return to water immediately",
+     "season":"Release all Kokanee to water immediately between September 10 - November 30",
+     "other":"-Lake Trout to be kept whole until off water or done fishing for the day. Leave 1 inch piece of skin for species identification while in transit or in the field.<br>-Possession or use of gaffs for landing prohibited"
+   },
+   {
+     "picker":"flumeCreek",
+     "regArea":"Flume Creek Below Fontenelle Reservoir in Sweetwater County",
+     "season":"Closed all year"
+   },
+   {
+     "picker":"warrenBridge",
+     "regArea":"Green River from Warren Bridge (Highway 191) downstream to Swain's Bridge (Road 23-179)",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"fontenelleDam",
+     "regArea":"Green River from Fontenelle Dam downstream 1 mile to Weeping Rocks Campground in Sweetwater County",
+     "season":"October 1 - December 31"
+   },
+   {
+     "picker":"belowWeeping",
+     "regArea":"Green River from Sweetwater County Road 8 Bridge downstream to the Big Sandy River",
+     "creel":"1 Trout per day or in possession, all trout over 20 inches released immediately",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"greenLakes",
+     "regArea":"Green River Lakes in Sublette County",
+     "boats":"No personal watercraft"
+   },
+   {
+     "picker":"halfmoonLake",
+     "regArea":"Halfmoon Lake in Sublette County",
+     "creel":"2 Lake Trout per day or in possession, no more than 1 over 24 inches",
+   },
+   {
+     "picker":"hamsFork",
+     "regArea":"Ham's Fork River from Viva Naughton Reservoir downstream to Kemmerer City Reservoir",
+     "tackle":"Artificial flies and lure only"
+   },
+   {
+     "picker":"highSavery",
+     "regArea":"High Savery Reservoir",
+     "season":"North Fork Savery Creek from concrete fish trap downstream to reservoir is closed from September 1 - September 30"
+   },
+   {
+     "picker":"jimBridger",
+     "regArea":"Jim Bridger Pond in Sweetwater County",
+     "boats":"- No motors over 15 horsepower<br>- No watercraft inside pumphouse booms",
+     "other":"Closed to ice fishing"
+   },
+   {
+     "picker":"kemmererRes",
+     "regArea":"Kemmerer City Reservoir",
+     "creel":"3 Trout per day or in possession, no more than 1 over 16 inches",
+     "boats":"No motorized boats",
+     "tackle":"Artificial flies and lure only"
+   },
+   {
+     "picker":"kendallWarm",
+     "regArea":"Kendall Warm Springs and Kendall Warm Springs Creek in Sublette County",
+     "season":"Closed all year"
+   },
+   {
+     "picker":"labargeCreek",
+     "regArea":"LaBarge Creek 500 feet downstream of the fish migration barrier between Big Falls and Turkey Creeks",
+     "season":"Closed all year"
+   },
+   {
+     "picker":"lakeAlice",
+     "regArea":"Lake Alice in Lincoln County",
+     "creel":"6 Trout per day or in possession, no more than 2 Cutthroat over 12 inches",
+     "boats":"No internal combustion engines",
+     "tackle":"Artificial flies and lure only"
+   },
+   {
+     "picker":"littleSoda",
+     "regArea":"Little Soda Lake in Sublette County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"meadowCreek",
+     "regArea":"Meadow Creek in Sublette County",
+     "season":"April 1 - June 30"
+   },
+   {
+     "picker":"meadowLake",
+     "regArea":"Meadow Lake in Sublette County",
+     "season":"- Entire lake closed November 15 - April 30<br>- East of Game and Fish markers closed from May 1 - June 30"
+   },
+   {
+     "picker":"middlePiney",
+     "regArea":"Middle Piney Lake in Sublette County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"naughtonPlant",
+     "regArea":"Naughton Plant Pond in Lincoln County",
+     "creel":"2 Trout per day or in possession",
+     "boats":"No internal combustion engines",
+     "other":"Closed to ice fishing"
+   },
+   {
+     "picker":"newForkLake",
+     "regArea":"New Fork Lakes in Sublette County",
+     "boats":"No personal watercraft"
+   },
+   {
+     "picker":"newForkRiver",
+     "regArea":"New Fork River Above the New Fork Lakes",
+     "season":"September 1 - April 30",
+   },
+   {
+     "picker":"newForkMesa",
+     "regArea":"New Fork River from the Mesa Road Bridge (Sublette County Road 23-123) downstream to the confluence with the East Fork River in Sublette County",
+     "tackle":"Artificial flies and lure only"
+   },
+   {
+     "picker":"northCottonwood",
+     "regArea":"North Cottonwood Creek drainage (including Maki Creek) upstream from Bridger-Teton National Forest boundary in Sublette County",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"northHorse",
+     "regArea":"North Horse Creek and Lead Creek drainage upstream from Bridger-Teton National Forest boundary in Sublette County",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"northPiney",
+     "regArea":"North Piney Creek Drainage upstream from Bridger-Teton National Forest boundary in Sublette County",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"northPineyLake",
+     "regArea":"North Piney Lake and upstream tributaries in Sublette County",
+     "creel":"1 Cutthroat per day or in possession",
+     "season":"June 1 - July 15",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"pinedalePond",
+     "regArea":"Pinedale Childrens Pond",
+     "other":"All fishermen must be 13 years old or younger"
+   },
+   {
+     "picker":"rockCrib",
+     "regArea":"Rock Crib Lake in Sublette County",
+     "creel":"6 Brook Trout per day or in possession"
+   },
+   {
+     "picker":"Salt Creek (Thomas Fork) drainage (including Raymond Creek) upstream from the Wyoming-Idaho state line in Lincoln County",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"smithsFork",
+     "regArea":"Smiths Fork Drainage upstream from the Hobble Creek confluence (including Hobble Creek drainage) in Lincoln County",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"sodaLakePinedale",
+     "regArea":"Soda Lake North of Pinedale in Sublette County",
+     "creel":"1 Trout per day or in possession",
+     "boats":"No personal watercraft",
+     "season":"- No internal combustion engines May 1 - May 31<br>- Closed November 15 - April 30"
+   },
+   {
+     "picker":"southCottonwood",
+     "regArea":"South Cottonwood Creek drainage, excluding Soda Lake Ponds",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"southHorse",
+     "regArea":"South Horse Creek drainage",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"stateHospital",
+     "regArea":"State Hospital Pond in Uinta County",
+     "other":"Patients of Wyoming State Hospital only"
+   },
+   {
+     "picker":"vivaNaughton",
+     "regArea":"Viva Naughton Reservoir in Lincoln County",
+     "creel":"6 Trout per day or in possession, no more than 1 over 20 inches",
+     "season":"Upstream face of dam closed all year to fishing"
+   },
+   {
+     "picker":"wagonCreek",
+     "regArea":"Wagon Creek Lake in sublette County",
+     "creel":"6 Brook Trout per day or in possession"
+   }
+
+ ],
+
+
  [
   {"basinPicker":"basinFive",
   "picker":"AM",
@@ -353,7 +591,7 @@
    {
      "picker":"ednessKimball",
      "regArea":"<h1 class=\"dataHead\">Edness Kimball Wilkins State Park, all ponds within the park in Natrona County</h1>",
-     "season":"Closed to fishing",
+     "season":"Closed all year",
      "boats":"No internal combustion engines"
    },
    {
