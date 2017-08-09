@@ -91,7 +91,6 @@ function regPointPopup(){
 	document.getElementById(attribute + "DataPane").style.display = "block";
 
 	for (var i = 0; i < basinData.length; i++){
-      alert(basinData[i][0].basinPicker);
 			if (basinData[i][0].basinPicker == attribute){
 				for(var j = 0; j < basinData[i].length; j++){
 					if(this.getAttribute("id") == basinData[i][j].picker){
