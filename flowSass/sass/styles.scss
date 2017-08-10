@@ -1,6 +1,6 @@
 $colorMain:#276272;
-$dark:#444444;
-$light:#DDDDDD;
+$dark:#605C52;
+$light:#F4F4E3;
 
 $font1:32px;
 $font2:20px;
@@ -51,8 +51,8 @@ h1{
   @include textStyle($font1);
   line-height: 30px;
   &.dataHead {
-    background-color:$colorMain;
-    color:$light;
+    background:url(../../photos/cartographerWhite.png) repeat $colorMain;
+    color:$colorMain;
     padding:10px;
   }
 }
@@ -74,6 +74,7 @@ img {
 }
 path {
   stroke-width:3px;
+  stroke:$colorMain;
   &:hover {
   stroke-width:10px;
   }
