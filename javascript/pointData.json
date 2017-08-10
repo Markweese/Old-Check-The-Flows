@@ -307,6 +307,110 @@
     }
  ],
 
+ [
+   {
+     "basinPicker":"basinThree",
+     "picker":"blackElk",
+     "regArea":"Black Elk Pond in Weston County",
+     "boats":"No watercraft"
+   },
+   {
+     "picker":"blackHills",
+     "regArea":"Black Hill Power and Light Osage Pond",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"bullCreek",
+     "regArea":"Bull Creek in Sheradin County",
+     "creel":"All trout (excluding Brook Trout) released to water immediately",
+     "tackle":"Artificial flies and lure only"
+   },
+   {
+     "picker":"burlingtonRes",
+     "regArea":"Burlington Reservoir in Natrona County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"cookLake",
+     "regArea":"Cook Lake in Crook County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"gilletteLake",
+     "regArea":"Gillette Fishing Lake in Campbell County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"healyRes",
+     "regArea":"Healy Reservoir in Johnson County",
+     "boats":"No engines over 15 horsepower"
+   },
+   {
+     "picker":"keyholeRes",
+     "regArea":"Keyhole Reservoir and all waters within Keyhole State Park in Crook County",
+     "creel":"3 Northern Pike per day or in possession, all Pike less than 30 inches released to water immediately"
+   },
+   {
+     "picker":"kleenburnPonds",
+     "regArea":"Kleenburn Ponds in Sheradin County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"middleForkPowder",
+     "regArea":"Middle Fork of Powder River from Bachaus Creek downstream to the Bar C Road (Road 238) on Bar C Ranch",
+     "creel":"3 Trout per day or in possession, no more than 1 over 16 inches"
+   },
+   {
+     "picker":"muddyGuardOne",
+     "regArea":"Muddy Guard Reservoir No. 1 in Johnson County",
+     "creel":"1 Trout per day or in possession, all trout less than 20 inches released to water immediately",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"muddyGuardRes",
+     "regArea":"Muddy Guard Reservoirs in Johnson County",
+     "boats":"No motors over 15 horsepower"
+   },
+   {
+     "picker":"northTongue",
+     "regArea":"North Tongue River drainage upstream from the mouth of Bull Creek in Sheradin County",
+     "creel":"All trout (except Brook Trout) released to water immediately",
+     "tackle":"Artificial flies and lure only"
+   },
+   {
+     "picker":"parkRes",
+     "regArea":"Park Reservoir in Johnson and Sheradin Counties",
+     "boats":"No motors over 15 horsepower"
+   },
+   {
+     "picker":"ranchester",
+     "regArea":"Ranchester City Reservoir in Sheradin County",
+     "boats":"No watercraft"
+   },
+   {
+     "picker":"sandCreek",
+     "regArea":"Sand Creek from the forest service boundary above Ranch \"A\" downstream to Interstate 90 in Crook County",
+     "creel":"- 12 Brown Trout per day or in possession, no more than 1 over 12 inches<br>- All other Trout released to water immediately",
+     "tackle":"Artificial flies and lures only"
+   },
+   {
+     "picker":"sibleyLake",
+     "regArea":"Sibley Lake in Sheradin County",
+     "boats":"No internal combustion engines"
+   },
+   {
+     "picker":"tongueRiver",
+     "regArea":"Tongue River drainage lakes and streams in Johnson and Sheradin Counties",
+     "other":"-All Walleye and Sauger to be kept whole until off water or done fishing for the day<br>- Once off the water, these species can be filleted for transportation and storage<br>- A piece of skin must be left for species identification while in transit or in the field"
+   },
+   {
+     "picker":"tieHack",
+     "regArea":"Tie Hack Reservoir in Johnson County",
+     "boats":"No internal combustion engines"
+   }
+
+ ],
+
 
  [
    {
