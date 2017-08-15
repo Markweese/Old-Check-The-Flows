@@ -60,9 +60,14 @@ h2{
   @include textStyle($font2);
   color:$colorMain;
 }
-h3, p{
-  @include textStyle($font3);
+h3{
+  @include textStyle(18px);
   color:$colorMain;
+  border-bottom:3px solid $colorMain;
+  border-top:3px solid $colorMain;
+}
+p{
+  @include textStyle($font3);
 }
 img {
   width:10%;

@@ -30,16 +30,27 @@ h2 {
 }
 
 /* line 63, ../sass/styles.scss */
-h3, p {
-  font-size: 16px;
+h3 {
+  font-size: 18px;
   font-weight: bold;
   font-family: helvetica, sans-serif;
   text-align: center;
   line-height: 20px;
   color: #276272;
+  border-bottom: 3px solid #276272;
+  border-top: 3px solid #276272;
 }
 
-/* line 67, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
+p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: helvetica, sans-serif;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* line 72, ../sass/styles.scss */
 img {
   width: 10%;
   height: auto;
@@ -47,7 +58,7 @@ img {
   margin: auto;
   padding-top: 10px;
 }
-/* line 73, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
 img.zonePhoto {
   width: auto;
   height: 90%;
@@ -56,14 +67,14 @@ img.zonePhoto {
   top: 10px;
   left: 10px;
 }
-/* line 76, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 img.infoImg {
   width: 100%;
   z-index: 1;
   display: none;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 svg {
   fill-rule: evenodd;
   clip-rule: evenodd;
@@ -72,30 +83,30 @@ svg {
   stroke-miterlimit: 1.5;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 path {
   stroke-width: 3px;
   stroke: #276272;
   fill-opacity: 0;
 }
-/* line 93, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 path:hover {
   stroke-width: 10px;
 }
 
-/* line 97, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 circle {
   stroke-width: 2px;
   stroke: #605C52;
   fill-opacity: 0;
   fill: #ebebeb;
 }
-/* line 102, ../sass/styles.scss */
+/* line 107, ../sass/styles.scss */
 circle:hover {
   stroke: #22AADD;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 .header {
   margin-bottom: 0px;
   padding-bottom: 10px;
@@ -104,7 +115,7 @@ circle:hover {
   border: none;
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .map-box {
   width: 80%;
   display: block;
@@ -114,7 +125,7 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 .river-box {
   position: fixed;
   display: none;
@@ -126,7 +137,7 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 131, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .zoneInterface {
   position: fixed;
   display: none;
@@ -137,7 +148,7 @@ circle:hover {
   left: 0px;
 }
 
-/* line 139, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 .zoneSVG {
   width: auto;
   height: 90%;
@@ -147,7 +158,7 @@ circle:hover {
   left: 10px;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 .dataPane {
   position: fixed;
   display: none;
@@ -163,7 +174,7 @@ circle:hover {
   overflow-y: scroll;
 }
 
-/* line 155, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .riverAttributes {
   text-align: center;
   background-color: #F4F4E3;
@@ -171,7 +182,7 @@ circle:hover {
   padding: 20px;
 }
 
-/* line 161, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 .closeOut {
   font-size: 16px;
   font-weight: bold;
@@ -198,7 +209,7 @@ circle:hover {
   outline: none;
 }
 
-/* line 168, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 .closeData {
   font-size: 16px;
   font-weight: bold;
