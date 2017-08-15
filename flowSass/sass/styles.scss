@@ -58,9 +58,11 @@ h1{
 }
 h2{
   @include textStyle($font2);
+  color:$colorMain;
 }
 h3, p{
   @include textStyle($font3);
+  color:$colorMain;
 }
 img {
   width:10%;
@@ -74,6 +76,7 @@ img {
   &.infoImg {
     width:100%;
     z-index:1;
+    display:none;
   }
 }
 svg{

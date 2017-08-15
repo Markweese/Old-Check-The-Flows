@@ -1,8 +1,13 @@
 [
  [
-  {"basinPicker":"basinOne",
+  {
+  "basinPicker":"basinOne",
    "picker":"grandTeton",
-   "regArea":"<h1 class=\"dataHead\">Grand Teton National Park Regulations</h1>"
+   "regArea":"<h1 class=\"dataHead\">Grand Teton National Park Regulations</h1>",
+   "creel":"<h3>All Lakes In Grand Teton</h3>- 6 Trout per day or in possession<br>- No more than 3 Cutthroat<br>- No more than 1 Cutthroat over 12 inches",
+   "boats":"<h3>All waters in Grand Teton</h3>Use of personal watercraft prohibited<br><h3>All waters excluding Jackson and Jenny Lake</h3>No motorized boats",
+   "season":"<h3>All streams and spring ponds in the park below Jackson Lake Dam (excluding Buffalo Fork River, Pacific Creek, Gros Ventre River, and the Snake</h3>Closed from December 1 - July 31. Artificial flies and lures only<br><h3>Christian Ponds, Hendrick Pond, Moose Pond, Sawmill Pond, and Swan Lake</h3>Closed all year)",
+   "other":"No fishing with archery equipment or spearguns in Grand Teton"
   },
   {
     "picker":"flatCreekUpper",
