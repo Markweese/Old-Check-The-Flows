@@ -1,7 +1,8 @@
 [
  [
   {"basinPicker":"basinOne",
-   "picker":"grandTeton"
+   "picker":"grandTeton",
+   "regArea":"<h1 class=\"dataHead\">Grand Teton National Park Regulations</h1>"
   },
   {
     "picker":"flatCreekUpper",

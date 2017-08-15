@@ -71,10 +71,22 @@ img {
   &.zonePhoto {
    @include zoneMap;
   }
+  &.infoImg {
+    width:100%;
+    z-index:1;
+  }
+}
+svg{
+  fill-rule:evenodd;
+  clip-rule:evenodd;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:1.5;
 }
 path {
   stroke-width:3px;
   stroke:$colorMain;
+  fill-opacity:0;
   &:hover {
   stroke-width:10px;
   }
@@ -82,6 +94,8 @@ path {
 circle{
   stroke-width:2px;
   stroke:$dark;
+  fill-opacity:0;
+  fill:rgb(235,235,235);
   &:hover{
   stroke:#22AADD;
   }

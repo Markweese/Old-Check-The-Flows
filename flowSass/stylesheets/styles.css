@@ -54,28 +54,45 @@ img.zonePhoto {
   top: 10px;
   left: 10px;
 }
+/* line 74, ../sass/styles.scss */
+img.infoImg {
+  width: 100%;
+  z-index: 1;
+}
 
-/* line 75, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
+svg {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 1.5;
+}
+
+/* line 86, ../sass/styles.scss */
 path {
   stroke-width: 3px;
   stroke: #276272;
+  fill-opacity: 0;
 }
-/* line 78, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 path:hover {
   stroke-width: 10px;
 }
 
-/* line 82, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 circle {
   stroke-width: 2px;
   stroke: #605C52;
+  fill-opacity: 0;
+  fill: #ebebeb;
 }
-/* line 85, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 circle:hover {
   stroke: #22AADD;
 }
 
-/* line 89, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 .header {
   margin-bottom: 0px;
   padding-bottom: 10px;
@@ -84,7 +101,7 @@ circle:hover {
   border: none;
 }
 
-/* line 96, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 .map-box {
   width: 80%;
   display: block;
@@ -94,7 +111,7 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 105, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .river-box {
   position: fixed;
   display: none;
@@ -106,7 +123,7 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 114, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .zoneInterface {
   position: fixed;
   display: none;
@@ -117,7 +134,7 @@ circle:hover {
   left: 0px;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .zoneSVG {
   width: auto;
   height: 90%;
@@ -127,7 +144,7 @@ circle:hover {
   left: 10px;
 }
 
-/* line 125, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .dataPane {
   position: fixed;
   display: none;
@@ -143,7 +160,7 @@ circle:hover {
   overflow-y: scroll;
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .riverAttributes {
   text-align: center;
   background-color: #F4F4E3;
@@ -151,7 +168,7 @@ circle:hover {
   padding: 20px;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 .closeOut {
   font-size: 16px;
   font-weight: bold;
@@ -178,7 +195,7 @@ circle:hover {
   outline: none;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 165, ../sass/styles.scss */
 .closeData {
   font-size: 16px;
   font-weight: bold;

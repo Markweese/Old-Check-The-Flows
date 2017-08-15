@@ -16,12 +16,12 @@ var basinFive = ["North Platte", "Sweetwater", "South Platte"];
 var yellowstone = ["Lamar","Soda Butte","Slough","Yellowstone","Gallatin","Madison","Firehole","Gibbon","Gardner","Bechler","Falls","Snake","Lewis"];
 
 //load the json and put the contents in basinData
-var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET','https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/javascript/pointData.json');
-  ourRequest.onload = function(){
-  basinData = JSON.parse(ourRequest.responseText);
+var newRequest = new XMLHttpRequest();
+  newRequest.open('GET','https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/javascript/pointData.json');
+  newRequest.onload = function(){
+  basinData = JSON.parse(newRequest.responseText);
   };
-  ourRequest.send();
+  newRequest.send();
 
 //adds event listeners to all basin paths
 for (var i = 0; i < pathIds.length; i++) {
@@ -95,7 +95,7 @@ function regPointPopup(){
 				for(var j = 0; j < basinData[i].length; j++){
 					if(this.getAttribute("id") == basinData[i][j].picker){
 						currentObj = basinData[i][j];
-//currentKey lets us know which key we are assigning attribute values to at this particular part of the loop
+//currentKey lets us know which object key we are on
             var currentKey = Object.keys(currentObj);
             for (x in currentObj) {
               var currentKey = x;
