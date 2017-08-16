@@ -1,9 +1,9 @@
-/* line 47, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 body {
   background-color: #276272;
 }
 
-/* line 50, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 h1 {
   font-size: 32px;
   font-weight: bold;
@@ -12,14 +12,14 @@ h1 {
   line-height: 20px;
   line-height: 30px;
 }
-/* line 53, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 h1.dataHead {
   background: url(../../photos/cartographerWhite.png) repeat #276272;
   color: #276272;
   padding: 10px;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 h2 {
   font-size: 20px;
   font-weight: bold;
@@ -29,7 +29,7 @@ h2 {
   color: #276272;
 }
 
-/* line 63, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 h3 {
   font-size: 18px;
   font-weight: bold;
@@ -41,7 +41,7 @@ h3 {
   border-top: 3px solid #276272;
 }
 
-/* line 69, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 p {
   font-size: 16px;
   font-weight: bold;
@@ -50,7 +50,7 @@ p {
   line-height: 20px;
 }
 
-/* line 72, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 img {
   width: 10%;
   height: auto;
@@ -58,23 +58,8 @@ img {
   margin: auto;
   padding-top: 10px;
 }
-/* line 78, ../sass/styles.scss */
-img.zonePhoto {
-  width: auto;
-  height: 90%;
-  padding: 10px 0;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-/* line 81, ../sass/styles.scss */
-img.infoImg {
-  width: 100%;
-  z-index: 1;
-  display: none;
-}
 
-/* line 87, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 svg {
   fill-rule: evenodd;
   clip-rule: evenodd;
@@ -83,30 +68,30 @@ svg {
   stroke-miterlimit: 1.5;
 }
 
-/* line 94, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 path {
   stroke-width: 3px;
   stroke: #276272;
   fill-opacity: 0;
 }
-/* line 98, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 path:hover {
   stroke-width: 10px;
 }
 
-/* line 102, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 circle {
   stroke-width: 2px;
   stroke: #605C52;
   fill-opacity: 0;
   fill: #ebebeb;
 }
-/* line 107, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 circle:hover {
   stroke: #22AADD;
 }
 
-/* line 111, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 .header {
   margin-bottom: 0px;
   padding-bottom: 10px;
@@ -115,9 +100,9 @@ circle:hover {
   border: none;
 }
 
-/* line 118, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .map-box {
-  width: 80%;
+  width: 60%;
   display: block;
   margin: auto;
   margin-top: 10px;
@@ -125,7 +110,7 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .river-box {
   position: fixed;
   display: none;
@@ -137,28 +122,43 @@ circle:hover {
   border: 5px solid white;
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 .zoneInterface {
   position: fixed;
   display: none;
   width: 100%;
   height: 100%;
-  background-color: #605C52;
+  background-color: white;
   top: 0px;
   left: 0px;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 .zoneSVG {
-  width: auto;
+  display: block;
+  margin: auto;
+  background-position: 0 0;
+  margin-top: 10px;
+}
+/* line 137, ../sass/styles.scss */
+.zoneSVG.wide {
+  display: block;
+  margin: auto;
+  background-position: 0 0;
+  width: 90%;
+  height: auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+/* line 144, ../sass/styles.scss */
+.zoneSVG.high {
   height: 90%;
-  padding: 10px 0;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  width: auto;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
-/* line 147, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .dataPane {
   position: fixed;
   display: none;
@@ -174,7 +174,7 @@ circle:hover {
   overflow-y: scroll;
 }
 
-/* line 160, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .riverAttributes {
   text-align: center;
   background-color: #F4F4E3;
@@ -182,7 +182,7 @@ circle:hover {
   padding: 20px;
 }
 
-/* line 166, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 .closeOut {
   font-size: 16px;
   font-weight: bold;
@@ -191,25 +191,26 @@ circle:hover {
   line-height: 20px;
   background-color: #276272;
   color: white;
-  top: 0px;
-  right: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
   position: fixed;
   display: none;
   width: 10%;
   height: 10%;
   z-index: 2;
 }
-/* line 38, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .closeOut:hover {
   box-shadow: none;
   background-color: #F4F4E3;
 }
-/* line 42, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .closeOut:focus {
   outline: none;
 }
 
-/* line 173, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .closeData {
   font-size: 16px;
   font-weight: bold;
@@ -218,17 +219,18 @@ circle:hover {
   line-height: 20px;
   background-color: #276272;
   color: white;
-  top: 0px;
-  right: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
   position: absolute;
   z-index: 2;
 }
-/* line 38, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .closeData:hover {
   box-shadow: none;
   background-color: #F4F4E3;
 }
-/* line 42, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .closeData:focus {
   outline: none;
 }

@@ -16,12 +16,9 @@ $gutter:10px;
   line-height:20px;
 }
 @mixin zoneMap(){
-  width:auto;
-  height:90%;
-  padding:10px 0;
-  position:absolute;
-  top:10px;
-  left:10px;
+  display:block;
+  margin:auto;
+  background-position:0 0;
 }
 
 @mixin popupGui(){
@@ -33,8 +30,9 @@ $gutter:10px;
   @include textStyle($font3);
   background-color:$colorMain;
   color:white;
-  top:0px;
-  right:0px;
+  position:absolute;
+  top:0;
+  right:0;
   &:hover{
   box-shadow:none;
   background-color: $light;
@@ -75,14 +73,6 @@ img {
   display:block;
   margin:auto;
   padding-top:10px;
-  &.zonePhoto {
-   @include zoneMap;
-  }
-  &.infoImg {
-    width:100%;
-    z-index:1;
-    display:none;
-  }
 }
 svg{
   fill-rule:evenodd;
@@ -116,7 +106,7 @@ circle{
   border:none;
 }
 .map-box {
-  width:80%;
+  width:60%;
   display:block;
   margin:auto;
   margin-top:$gutter;
@@ -137,12 +127,26 @@ circle{
  @include popupGui;
  width:100%;
  height:100%;
- background-color:$dark;
+ background-color:white;
  top:0px;
  left:0px;
 }
 .zoneSVG{
   @include zoneMap;
+  margin-top:$gutter;
+  &.wide{
+   @include zoneMap;
+   width:90%;
+   height:auto;
+   background-size:100% auto;
+   background-repeat: no-repeat;
+   }
+  &.high{
+   height:90%;
+   width:auto;
+   background-size:auto 100%;
+   background-repeat: no-repeat;
+   }
 }
 .dataPane{
   @include popupGui;
