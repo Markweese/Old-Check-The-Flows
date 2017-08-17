@@ -233,7 +233,7 @@
     {
     "picker":"newtownToGibbs",
     "regArea":"<h1 class=\"dataHead\">North Fork of the Shoshone River drainage from Newton Creek downstream to Gibbs Bridge(including Newton Creek) in Park County</h1>",
-    "season":"July 1 - March 30"
+    "season":"April 1 - June 30"
     },
     {
     "picker":"gibbsUpstream",
@@ -272,7 +272,7 @@
       "picker":"shoshoneLake",
       "regArea":"<h1 class=\"dataHead\">Shoshone Lake and Shoshone Creek in Fremont County</h1>",
       "creel":"6 Brook Trout per day or in possession",
-      "season":"June 15 - August 31"
+      "season":"September 1 - June 14"
     },
     {
       "picker":"shoshoneRiver",
@@ -702,7 +702,7 @@
    {
      "picker":"ednessKimball",
      "regArea":"<h1 class=\"dataHead\">Edness Kimball Wilkins State Park, all ponds within the park in Natrona County</h1>",
-     "season":"Closed all year",
+     "season":"Closed all year to fishing, minnow seining, and minnow trapping",
      "boats":"No internal combustion engines"
    },
    {
