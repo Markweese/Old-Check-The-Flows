@@ -84,6 +84,11 @@ function clickBasin(){
 		document.getElementById(attribute + "Pane").style.display = "inline-block";
 		document.getElementById("closeOut").style.display = "inline-block";
     document.getElementById(attribute + "Map").style.backgroundImage = "url(photos/" + attribute + ".jpg)";
+
+    if(attribute == "yellowstone"){
+      regPointPopup();
+
+    }
 }
 
 /*this is all set, build out an array of arrays of objects in JSON*/
