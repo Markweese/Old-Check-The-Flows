@@ -2,45 +2,11 @@
 [
   {"basinPicker":"yellowstone",
   "picker":"yellowstone",
-  "season":"<h3>General</h3>\\
-   <ul>\\
-   <li>Fishing season opens Memorial Day weekend and ends the first Sunday in November</li>\\
-   <li>Hours: Sunrise to sunset<h3>Permanent Closures</li>
-   </ul>
-    <ul>
-     <li>Fishing Bridge one mile downstream and one-quarter mile upstream</li>
-     <li>Alum Creek (Hayden Valley)</li>
-     <li> Elk Antler (Hayden Valley)</li>
-     <li>Pelican Creek (Pelican Valley)</li>
-     <li>100 yards in either direction of LeHardys Rapids along the Yellowstone River</li>
-     <li>Firehole River near Old Faithful and Midway Geyser Basin</li>
-     <li>The Madison River 250 yards upstream from Seven Mile Bridge</li>
-     <li>Bridge Bay Marina, Harbor & Grant Village Marinas and their channels to the lake</li>
-     <li>Shoreline near West Thumb Geyser Basin</li>
-    </ul>
-    <h3>Other Dates</h3>
-    <ul>
-     <li>Heart Lake opens July 1st</li>
-     <li>Trout, Shrimp and Buck Lakes open June 15th</li>
-     <li>Yellowstone Lake opens June 15th</li>
-     <li>Agate and Cottonwood Creeks along the Yellowstone open July 15th</li>
-     <li>Clear and Cub Creeks open August 11th</li>
-     <li>Sylvan and Eleanor Lakes open July 15th. Boats and float tubes prohibited</li>
-     <li>Streams entering Yellowstone Lake open July 15th</li>
-    </ul>",
+  "season":"<h3>General</h3><ul><li>Fishing season opens Memorial Day weekend and ends the first Sunday in November</li><li>Hours: Sunrise to sunset<h3>Permanent Closures</li></ul><ul><li>Fishing Bridge one mile downstream and one-quarter mile upstream</li><li>Alum Creek (Hayden Valley)</li><li> Elk Antler (Hayden Valley)</li><li>Pelican Creek (Pelican Valley)</li><li>100 yards in either direction of LeHardys Rapids along the Yellowstone River</li><li>Firehole River near Old Faithful and Midway Geyser Basin</li><li>The Madison River 250 yards upstream from Seven Mile Bridge</li><li>Bridge Bay Marina, Harbor & Grant Village Marinas and their channels to the lake</li><li>Shoreline near West Thumb Geyser Basin</li></ul><h3>Other Dates</h3><ul><li>Heart Lake opens July 1st</li><li>Trout, Shrimp and Buck Lakes open June 15th</li><li>Yellowstone Lake opens June 15th</li><li>Agate and Cottonwood Creeks along the Yellowstone open July 15th</li><li>Clear and Cub Creeks open August 11th</li><li>Sylvan and Eleanor Lakes open July 15th. Boats and float tubes prohibited</li><li>Streams entering Yellowstone Lake open July 15th</li></ul>",
     "creel":"<h3>Yellowstone Cutthroat Trout, Mountain Whitefish, Arctic Grayling(Native)</h3>- Yellowstone Cutthroat and Arctic Grayling are native and considered threatened species and should be fished as catch and release only<br>- Mountain Whitefish are also native and, while not a threatened species, should be fished as catch and release only<h3>Rainbow Trout(Non-native)</h3>There is no possession limit on nonnative fish caught in the park with the following exceptions; waters above Lewis Falls, Lewis Lake, Lewis Channel and Shoshone Lake and its tributaries. Possession limit of five nonnative fish in combination, only one of which can be a brown trout. Firehole River, Madison River, lower Gibbon River (below Gibbon Falls), possession of five brook trout is allowed. Catch and release all rainbow and brown trout. Rainbow trout caught in the Lamar River drainage must be harvested in order to protect native cutthroat trout in the headwater reaches of the drainage. This includes Slough Creek and Soda Butte Creek.<h3>Brook Trout(Non-native)</h3>There is no possession limit on nonnative fish caught in the park with the following exceptions; waters above Lewis Falls, Lewis Lake, Lewis Channel and Shoshone Lake and its tributaries. Possession limit of five nonnative fish in combination, only one of which can be a brown trout. Firehole River, Madison River, lower Gibbon River (below Gibbon Falls), possession of five brook trout is allowed. Catch and release all rainbow and brown trout. Brook trout caught in the Lamar River drainage must be harvested in order to protect native cutthroat trout. This includes Slough Creek and Soda Butte Creek.<h3>Brown Trout(Non-native)</h3>There is no possession limit on nonnative fish caught in the park with the following exceptions; waters above Lewis Falls, Lewis Lake, Lewis Channel and Shoshone Lake and its tributaries. Possession limit of five nonnative fish in combination, only one of which can be a brown trout. Firehole River, Madison River, lower Gibbon River (below Gibbon Falls), possession of five brook trout is allowed. Catch and release all rainbow and brown trout.<h3>LakeTrout</h3> In Yellowstone Lake and its tributaries as well as the Yellowstone River there is no limit. All lake trout caught in Yellowstone Lake must be killed. There is no possession limit on nonnative fish caught in the park with the following exceptions; waters above Lewis Falls, Lewis Lake, Lewis Channel and Shoshone Lake and its tributaries. Possession limit of five nonnative fish in combination, only one of which can be a brown trout.<br><br>Lake trout are an invasive species that are present in Shoshone, Lewis, Yellowstone and Heart lakes. Unfortunately their introduction to these Yellowstone fisheries has greatly impacted the native cutthroat population within the park's larger bodies of water. This has lead to a significant eradication program within the park designed to eliminate this non-native fish in the hopes of saving another. By comparison lake trout are significantly larger than the native species of cutthroat trout and may consume as many as 50 cutthroats in a year.<br><br>In an ongoing effort to protect the native cutthroat populations the park service requires that all lake trout be destroyed if caught in Yellowstone Lake. If you're fishing in the backcountry you must dispose of all fish entrails in fast moving or deep water. Do not leave fish carcasses along beaches or river banks because they will attract bears and other wildlife. If you should catch a lake trout the best method for disposal is to puncture the air bladder which lies behind the head and below the dorsal fin. After performing this procedure simply drop the trout back into the lake. If fishing from a shoreline consider weighting the fish and throwing it back into deeper water",
-    "tackle":"<ul>
-    <li>One rod and one line per person</li>
-    <li>Artificial flies and lures only. No live bait such as worms minnows or fish eggs</li>
-    <li>All hooks must be barbless. Barbed hooks must be pinched flat</li>
-    <li>Lead fishing tackle is prohibited</li>",
+    "tackle":"<ul><li>One rod and one line per person</li><li>Artificial flies and lures only. No live bait such as worms minnows or fish eggs</li><li>All hooks must be barbless. Barbed hooks must be pinched flat</li><li>Lead fishing tackle is prohibited</li>",
     "boats":"All boats, including float tubes must purchase a boating permit",
-    "other":"<ul>
-    <li>Individuals 16 and older must possess a valid park fishing license.<li>
-    <li>Permit pricing: 3-day is $18.00, 7-day is $25.00, annual permit is $40.00.<li>
-    <li>Fishing is not allowed from bridges or boat docks.</li>
-    <li>Dispose of fish entrails in fast moving waters and 100 feet from backcountry campsites.</li>
-    <li>The Madison, Firehole and the Gibbon rivers are fly fishing only.<li>"
+    "other":"<ul><li>Individuals 16 and older must possess a valid park fishing license.<li><li>Permit pricing: 3-day is $18.00, 7-day is $25.00, annual permit is $40.00.<li><li>Fishing is not allowed from bridges or boat docks.</li><li>Dispose of fish entrails in fast moving waters and 100 feet from backcountry campsites.</li><li>The Madison, Firehole and the Gibbon rivers are fly fishing only.<li>"
   }
 
  ],
