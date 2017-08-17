@@ -23,12 +23,16 @@ var newRequest = new XMLHttpRequest();
   };
   newRequest.send();
 
+
 //adds event listeners to all basin paths
 for (var i = 0; i < pathIds.length; i++) {
 	pathIds[i].addEventListener("mouseover", mouseOverBasin);
 	pathIds[i].addEventListener("mouseout", mouseOutBasin);
 	pathIds[i].addEventListener("click", clickBasin);
 }
+
+//adding a separate event litener to yellowstone path
+document.getElementById("yellowstone").addEventListener("click", regPointPopup);
 
 //add event listeners to circles
 for (var i = 0; i < regPoints.length; i++){
@@ -81,18 +85,16 @@ function mouseOutBasin() {
 function clickBasin(){
 	  attribute = this.getAttribute("id");
 
-		document.getElementById(attribute + "Pane").style.display = "inline-block";
-		document.getElementById("closeOut").style.display = "inline-block";
+    if(attribute != "yellowstone"){
     document.getElementById(attribute + "Map").style.backgroundImage = "url(photos/" + attribute + ".jpg)";
-
-    if(attribute == "yellowstone"){
-      regPointPopup();
-
-    }
+  }
+    document.getElementById(attribute + "Pane").style.display = "inline-block";
+    document.getElementById("closeOut").style.display = "inline-block";
 }
 
 /*this is all set, build out an array of arrays of objects in JSON*/
 function regPointPopup(){
+//first statement clears, second displays new pane
   document.getElementById(attribute + "RiverAttributes").innerHTML = "";
 	document.getElementById(attribute + "DataPane").style.display = "block";
 
