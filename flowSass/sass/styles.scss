@@ -1,4 +1,6 @@
-$colorMain:#276272;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$colorMain: #4B8BF7;
 $dark:#605C52;
 $light:#F4F4E3;
 
@@ -11,7 +13,8 @@ $gutter:10px;
 @mixin textStyle($size){
   font-size:$size;
   font-weight:bold;
-  font-family:helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-family:'Lato', sans-serif;
   text-align:center;
   line-height:20px;
 }
