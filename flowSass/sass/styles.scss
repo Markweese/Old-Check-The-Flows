@@ -89,11 +89,21 @@ path {
   stroke-width:10px;
   }
 }
+.highlight {
+ fill:none;
+ stroke:yellow;
+ stroke-width:2px;
+ opacity:0;
+ &.hover{
+   stroke-width:2px;
+ }
+}
 circle{
   stroke-width:2px;
   stroke:$dark;
   fill-opacity:0;
   fill:rgb(235,235,235);
+  z-index:1;
   &:hover{
   stroke:#22AADD;
   }
@@ -136,7 +146,7 @@ circle{
   margin-top:$gutter;
   &.wide{
    @include zoneMap;
-   width:90%;
+   width:70%;
    height:auto;
    background-size:100% auto;
    background-repeat: no-repeat;

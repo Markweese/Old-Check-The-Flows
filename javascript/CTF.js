@@ -37,6 +37,9 @@ document.getElementById("yellowstone").addEventListener("click", regPointPopup);
 //add event listeners to circles
 for (var i = 0; i < regPoints.length; i++){
     	regPoints[i].addEventListener("click", regPointPopup);
+      //the highlight finctions are used to highlight river/lake segments assoiciated with regulation point.
+      /*regPoints[i].addEventListener("mouseover", highlight);
+      regPoints[i].addEventListener("mouseout", unHighlight);*/
 }
 
 //gets id attribute from last hovered path and finds associated array
@@ -92,7 +95,15 @@ function clickBasin(){
     document.getElementById("closeOut").style.display = "inline-block";
 }
 
-/*this is all set, build out an array of arrays of objects in JSON*/
+//Highlights polyline segments on a hover to give user a better sense of reg area location
+/*function highlight(){
+document.getElementById(this.getAttribute("id") + "Highlight").style.opacity = "1";
+}
+
+function unHighlight(){
+document.getElementById(this.getAttribute("id") + "Highlight").style.opacity = "0.0";
+}*/
+
 function regPointPopup(){
 //first statement clears, second displays new pane
   document.getElementById(attribute + "RiverAttributes").innerHTML = "";
