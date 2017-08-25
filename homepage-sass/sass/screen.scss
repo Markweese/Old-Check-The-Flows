@@ -1,0 +1,214 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+$color-main: #4B8BF7;
+$color-alt: #BAC2FA;
+$font-header:'impact', sans-serif;
+$font-main: 'Lato', sans-serif;
+$break-medium: "only screen and (max-width: 795px)";
+$break-large: "only screen and (max-width: 810px)";
+
+@mixin headerText(){
+  color:white;
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 14pt;
+  text-align:left;
+  letter-spacing: 2px;
+}
+
+@mixin buttonText(){
+  letter-spacing: 2px;
+  color:black;
+  background-color:white;
+  font-family:$font-main;
+  font-weight: bold;
+  font-size: 12pt;
+  text-align:center;
+}
+
+@mixin arrows(){
+    position: absolute;
+    bottom:45%;
+}
+
+.txt{
+  @include buttonText;
+  display:inline-block;
+  margin:auto;
+  z-index:1;
+  position:inherit;
+  padding:10px;
+}
+.header {
+  @include headerText;
+  width: 100%;
+  height:90px;
+  background-color: $color-main;
+  img{
+    width: 7%;
+    height: auto;
+    float:left;
+    margin:auto 0;
+    padding:5px 0 0 5px;
+    @media #{$break-medium}{
+      display:block;
+      margin:auto;
+      float:none;
+      width:70px;
+      height:auto;
+    }
+  }
+  .galPosition {
+    position:absolute;
+    bottom:5px;
+    left:20px;
+    li {
+      float:left;
+      width:20px;
+      height:20px;
+      background-color: white;
+      margin:0 10px;
+    }
+  }
+}
+
+.featured {
+  @include buttonText;
+  border:2px solid white;
+  width:100%;
+  height:500px;
+  margin-bottom:5%;
+  background-size:cover;
+  & #contentDesc {
+    float: left;
+    font-size:22px;
+    background-color: white;
+    padding:20px;
+    margin-left: 5%;
+    display:inline-block;
+    position:relative;
+    top:25px;
+    @media #{$break-medium}{
+      display:inline;
+      font-size:12px;
+      padding:5px;
+    }
+  }
+  & #arrowLeft {
+    @include arrows;
+    left:0px;
+    @media #{$break-medium}{
+    display:none;
+    }
+  }
+  & #arrowRight {
+    @include arrows;
+    right:0px;
+    @media #{$break-medium}{
+    display:none;
+    }
+  }
+}
+
+.categoryBlock {
+  width:30%;
+  overflow-y: hidden;
+  border:10px solid $color-main;
+  height:200px;
+  background-color:$color-main;
+  margin:0 0 1% 3px;
+  text-align:center;
+  display:inline-block;
+  @media #{$break-large}{
+    margin: 0 0 1%;
+    display:block;
+    width:100%;
+    margin-top:5px;
+    height:90px;
+    img {
+      display:none;
+    }
+    .txt{
+      width:80%;
+      font-size:22px;
+      background-color:$color-main;
+      color:white;
+    }
+  }
+  img{
+    width:80%;
+    opacity:.5;
+    position:relative;
+    &:hover{
+      opacity:1;
+    }
+  }
+}
+
+.container {
+    @include buttonText;
+    background-color: $color-main;
+    overflow: hidden;
+    a {
+    @include buttonText;
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    &:hover{
+      background-color:$color-alt;
+    }
+  }
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    .dropbtn {
+    @include headerText;
+    text-align:center;
+    min-width: 160px;
+    background-color: $color-main;
+    border:none;
+    display:inline-block;
+    padding:0 2px;
+    margin-left: 20px;
+    line-height: 90px;
+    @media #{$break-medium}{
+      display:none;
+    }
+    border: none;
+    outline: none;
+    }
+    &:hover .dropbtn {
+      background-color:$color-alt;
+    }
+    &:hover .dropdown-content{
+      display:block;
+    }
+}
+
+.dropdown-content {
+    margin-left: 20px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    &:hover{
+      background-color:$color-alt;
+    }
+  }
+}
