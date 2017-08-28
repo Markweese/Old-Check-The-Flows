@@ -10,8 +10,8 @@
  $color-alt: #BAC2FA;
  $font-header:'impact', sans-serif;
  $font-main: 'Lato', sans-serif;
- $break-medium: "only screen and (max-width: 795px)";
- $break-large: "only screen and (max-width: 810px)";
+ $break-medium: "only screen and (min-width: 795px)";
+ $break-large: "only screen and (min-width: 810px)";
 
  @mixin headerText(){
    color:white;
@@ -57,28 +57,27 @@
    height:90px;
    background-color: $color-main;
    img{
-     width: 7%;
+     display:block;
+     margin:auto;
+     float:none;
+     width:70px;
      height: auto;
-     float:left;
-     margin:auto 0;
      padding:5px 0 0 5px;
      @media #{$break-medium}{
-       display:block;
-       margin:auto;
-       float:none;
-       width:70px;
-       height:auto;
+       float:left;
+       margin:auto 0;
+       display:inline;
      }
    }
    & #mediaDrop{
-      display:none;
+     display:inline;
      width: 52px;
      height:auto;
      float:left;
      margin:auto 0;
      padding:10px 0 0 5px;
      @media#{$break-medium}{
-      display:inline;
+      display:none;
      }
    }
  }
@@ -92,24 +91,25 @@
    background-size:cover;
    & #contentDesc {
      float: left;
-     font-size:22px;
      background-color: white;
-     padding:20px;
      margin-left: 5%;
-     display:inline-block;
      position:relative;
      top:25px;
+     display:inline;
+     font-size:12px;
+     padding:5px;
      @media #{$break-medium}{
-       display:inline;
-       font-size:12px;
-       padding:5px;
+       font-size:22px;
+       padding:20px;
+       display:inline-block;
      }
    }
    & #arrowLeft {
      @include arrows;
      left:0px;
-     @media #{$break-medium}{
      display:none;
+     @media #{$break-medium}{
+     display:inline;
      }
    }
    .galPosition {
@@ -127,46 +127,57 @@
    & #arrowRight {
      @include arrows;
      right:0px;
-     @media #{$break-medium}{
      display:none;
+     @media #{$break-medium}{
+     display:inline;
      }
    }
  }
 
  .categoryBlock {
-   width:30%;
    overflow-y: hidden;
    border:10px solid $color-main;
-   height:200px;
    background-color:$color-main;
-   margin:0 0 1% 3px;
    text-align:center;
-   display:inline-block;
+   margin: 0 0 1%;
+   display:block;
+   width:100%;
+   margin-top:5px;
+   height:90px;
+   img {
+     display:none;
+   }
+   .txt{
+     width:80%;
+     font-size:22px;
+     background-color:$color-main;
+     color:white;
+   }
    @media #{$break-large}{
-     margin: 0 0 1%;
-     display:block;
-     width:100%;
-     margin-top:5px;
-     height:90px;
+     width:30%;
+     height:200px;
+     margin:0 0 1% 3px;
+     display:inline-block;
      img {
-       display:none;
+       display:inline;
+       width:70%;
+       opacity:.5;
+       position:relative;
+       &:hover{
+         opacity:1;
+       }
      }
-     .txt{
-       width:80%;
-       font-size:22px;
-       background-color:$color-main;
-       color:white;
+     .txt {
+       @include buttonText;
+       display:inline-block;
+       margin:auto;
+       z-index:1;
+       position:inherit;
+       padding:10px;
      }
    }
-   img{
-     width:70%;
-     opacity:.5;
-     position:relative;
-     &:hover{
-       opacity:1;
-     }
-   }
- }
+}
+
 
  .container {
      @include buttonText;
@@ -188,6 +199,7 @@
      overflow: hidden;
      .dropbtn {
      @include headerText;
+     display:none;
      text-align:center;
      min-width: 160px;
      background-color: $color-main;
@@ -196,8 +208,8 @@
      margin-left: 20px;
      line-height: 90px;
      @media #{$break-medium}{
-       display:none;
-     }
+       display:block;
+      }
      }
      &:hover .dropbtn {
        background-color:$color-alt;
