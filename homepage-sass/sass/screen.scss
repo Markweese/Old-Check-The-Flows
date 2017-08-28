@@ -86,7 +86,7 @@
    @include buttonText;
    border:2px solid white;
    width:100%;
-   height:500px;
+   height:300px;
    margin-bottom:5%;
    background-size:cover;
    & #contentDesc {
@@ -114,14 +114,22 @@
    }
    .galPosition {
      position:absolute;
-     top:500px;
+     top:350px;
      left:20px;
      li {
        float:left;
-       width:20px;
-       height:20px;
+       width:10px;
+       height:10px;
        background-color: white;
-       margin:0 10px;
+       margin:0 5px;
+     }
+     @media #{$break-medium}{
+      top:500px;
+      li {
+        width:20px;
+        height:20px;
+        margin:0 10px
+      }
      }
    }
    & #arrowRight {
@@ -131,6 +139,9 @@
      @media #{$break-medium}{
      display:inline;
      }
+   }
+   @media #{$break-medium}{
+     height:500px;
    }
  }
 
