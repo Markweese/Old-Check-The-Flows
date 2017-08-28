@@ -69,6 +69,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 40, ../sass/screen.scss */
+.center {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 46, ../sass/screen.scss */
 .txt {
   letter-spacing: 2px;
   color: black;
@@ -84,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 10px;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .header {
   color: white;
   font-family: "Lato", sans-serif;
@@ -96,7 +103,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 90px;
   background-color: #4B8BF7;
 }
-/* line 53, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .header img {
   width: 7%;
   height: auto;
@@ -105,7 +112,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 5px 0 0 5px;
 }
 @media only screen and (max-width: 795px) {
-  /* line 53, ../sass/screen.scss */
+  /* line 59, ../sass/screen.scss */
   .header img {
     display: block;
     margin: auto;
@@ -114,22 +121,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: auto;
   }
 }
-/* line 67, ../sass/screen.scss */
-.header .galPosition {
-  position: absolute;
-  bottom: 5px;
-  left: 20px;
-}
-/* line 71, ../sass/screen.scss */
-.header .galPosition li {
+/* line 73, ../sass/screen.scss */
+.header #mediaDrop {
+  display: none;
+  width: 52px;
+  height: auto;
   float: left;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  margin: 0 10px;
+  margin: auto 0;
+  padding: 10px 0 0 5px;
+}
+@media only screen and (max-width: 795px) {
+  /* line 73, ../sass/screen.scss */
+  .header #mediaDrop {
+    display: inline;
+  }
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .featured {
   letter-spacing: 2px;
   color: black;
@@ -144,7 +152,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 5%;
   background-size: cover;
 }
-/* line 88, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .featured #contentDesc {
   float: left;
   font-size: 22px;
@@ -156,39 +164,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 25px;
 }
 @media only screen and (max-width: 795px) {
-  /* line 88, ../sass/screen.scss */
+  /* line 93, ../sass/screen.scss */
   .featured #contentDesc {
     display: inline;
     font-size: 12px;
     padding: 5px;
   }
 }
-/* line 103, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .featured #arrowLeft {
   position: absolute;
-  bottom: 45%;
+  top: 275px;
   left: 0px;
 }
 @media only screen and (max-width: 795px) {
-  /* line 103, ../sass/screen.scss */
+  /* line 108, ../sass/screen.scss */
   .featured #arrowLeft {
     display: none;
   }
 }
-/* line 110, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
+.featured .galPosition {
+  position: absolute;
+  top: 500px;
+  left: 20px;
+}
+/* line 119, ../sass/screen.scss */
+.featured .galPosition li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin: 0 10px;
+}
+/* line 127, ../sass/screen.scss */
 .featured #arrowRight {
   position: absolute;
-  bottom: 45%;
+  top: 275px;
   right: 0px;
 }
 @media only screen and (max-width: 795px) {
-  /* line 110, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   .featured #arrowRight {
     display: none;
   }
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .categoryBlock {
   width: 30%;
   overflow-y: hidden;
@@ -200,7 +222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: inline-block;
 }
 @media only screen and (max-width: 810px) {
-  /* line 119, ../sass/screen.scss */
+  /* line 136, ../sass/screen.scss */
   .categoryBlock {
     margin: 0 0 1%;
     display: block;
@@ -208,11 +230,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 5px;
     height: 90px;
   }
-  /* line 134, ../sass/screen.scss */
+  /* line 151, ../sass/screen.scss */
   .categoryBlock img {
     display: none;
   }
-  /* line 137, ../sass/screen.scss */
+  /* line 154, ../sass/screen.scss */
   .categoryBlock .txt {
     width: 80%;
     font-size: 22px;
@@ -220,18 +242,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     color: white;
   }
 }
-/* line 144, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .categoryBlock img {
-  width: 80%;
+  width: 70%;
   opacity: .5;
   position: relative;
 }
-/* line 148, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .categoryBlock img:hover {
   opacity: 1;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .container {
   letter-spacing: 2px;
   color: black;
@@ -243,7 +265,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #4B8BF7;
   overflow: hidden;
 }
-/* line 158, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .container a {
   letter-spacing: 2px;
   color: black;
@@ -256,17 +278,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 14px 16px;
   text-decoration: none;
 }
-/* line 163, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .container a:hover {
   background-color: #BAC2FA;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .dropdown {
   float: left;
   overflow: hidden;
 }
-/* line 172, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .dropdown .dropbtn {
   color: white;
   font-family: "Lato", sans-serif;
@@ -278,29 +300,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   min-width: 160px;
   background-color: #4B8BF7;
   border: none;
-  display: inline-block;
   padding: 0 2px;
   margin-left: 20px;
   line-height: 90px;
-  border: none;
-  outline: none;
 }
 @media only screen and (max-width: 795px) {
-  /* line 172, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   .dropdown .dropbtn {
     display: none;
   }
 }
-/* line 188, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .dropdown:hover .dropbtn {
   background-color: #BAC2FA;
 }
-/* line 191, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .dropdown-content {
   margin-left: 20px;
   display: none;
@@ -309,7 +328,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-/* line 203, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .dropdown-content a {
   float: none;
   color: black;
@@ -318,7 +337,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
   text-align: left;
 }
-/* line 210, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .dropdown-content a:hover {
   background-color: #BAC2FA;
 }

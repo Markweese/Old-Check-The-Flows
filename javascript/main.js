@@ -5,13 +5,26 @@ var position;
 var listItems = [];
 var categoryBlocks = document.getElementsByClassName("categoryBlock");
 var labelId;
+var dropOpen = false;
 var timer = window.setInterval(carousel, 4000);
 
 var gallery = [{"img":"bank.jpg", "desc":"BOX CANYON OF THE HENRYS FORK"},{"img":"jackson.jpg","desc":"JACKSON LAKE AT THE FOOT OF THE GRAND TETONS"},{"img":"deckers.jpg", "desc":"COLORADO'S SOUTH PLATTE RIVER AT ITS FINEST"},{"img":"pebble.jpg", "desc":"STONY SHORES OF COLORADO'S FRASER RIVER"}];
 //gallery buttons
 document.getElementById("arrowRight").addEventListener("click", forward);
 document.getElementById("arrowLeft").addEventListener("click",back);
+//mobile dropdown button
+document.getElementById("mediaDrop").addEventListener("click", dropMobile);
 
+//mobile dropdown button
+function dropMobile(){
+  if(dropOpen == false){
+  document.getElementById("mediaDrop").src = "photos/mobileDropped.png";
+  dropOpen = true;
+} else if(dropOpen == true){
+  document.getElementById("mediaDrop").src = "photos/mobileDrop.png";
+  dropOpen = false;
+}
+}
 //category buttons
 for (var i = 0; i <= categoryBlocks.length - 1; i++){
   categoryBlocks[i].addEventListener("mouseover", removeText);
@@ -21,10 +34,12 @@ for (var i = 0; i <= categoryBlocks.length - 1; i++){
 function removeText(){
   labelId = this.getAttribute('id');
   document.getElementById(labelId + "Label").style.display = "none";
+  document.getElementById(labelId + "Img").style.opacity = "1";
 }
 //add button text
 function addText(){
   document.getElementById(labelId + "Label").style.display = "inline-block";
+  document.getElementById(labelId + "Img").style.opacity = ".5";
 }
 
 //populates the gallery to start and points toward the current array position
