@@ -338,7 +338,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: none;
   padding: 0 2px;
   margin-left: 20px;
-  line-height: 90px;
+  line-height: 85px;
 }
 @media only screen and (min-width: 795px) {
   /* line 211, ../sass/screen.scss */
