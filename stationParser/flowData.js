@@ -40,5 +40,5 @@ xmlhttp.onreadystatechange = function() {
       spots.forEach(printList);
     }
 };
-xmlhttp.open("GET", " https://waterservices.usgs.gov/nwis/iv/?format=json&sites=09080400,09077500,06620000,09038500&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
