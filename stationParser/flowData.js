@@ -34,11 +34,11 @@ xmlhttp.onreadystatechange = function() {
       //print all present cfs readings to their own div
       function printList(item, index){
         if (item.site != undefined){
-        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
+        console.log(item.site + ": " item.lat + ", " + item.long);
         }
       }
       spots.forEach(printList);
     }
 };
-xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
+xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=co&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
