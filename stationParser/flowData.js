@@ -29,7 +29,7 @@ xmlhttp.onreadystatechange = function() {
       //longitude
         spots[pos].long = myArr.value.timeSeries[i].sourceInfo.geoLocation.geogLocation.longitude;
 
-        console.log(spots[spots.length].site + ", " + spots[spots.length].lat + ", " + spots[spots.length].long);
+        console.log(spots[pos].site + ", " + spots[pos].lat + ", " + spots[pos].long);
         }
       }
 
