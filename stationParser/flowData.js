@@ -4,14 +4,6 @@ var checkVar;
 var arrLength;
 var myArr;
 var xmlhttp = new XMLHttpRequest();
-
-function initMap() {
-  //add google map
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 42.001442, lng: -111.099978},
-    zoom: 6
-  });
-
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -38,12 +30,7 @@ xmlhttp.onreadystatechange = function() {
       //longitude
         spots[pos].long = myArr.value.timeSeries[i].sourceInfo.geoLocation.geogLocation.longitude;
 
-        //add markers
-        var latLng = new google.maps.LatLng(spots[pos].lat, spots[pos].long);
-        var marker = new google.maps.Marker({
-        position: latLng,
-        map: map
-        });
+        console.log(spots[pos].site + ", " + spots[pos].lat + ", " + spots[pos].long);
         }
       }
 
