@@ -1,5 +1,5 @@
 var spots = [{}];
-var spec = "mt";
+var spec = "co";
 var checkVar;
 var arrLength;
 var myArr;
@@ -25,12 +25,14 @@ xmlhttp.onreadystatechange = function() {
         spots[pos].cfs = parseInt(myArr.value.timeSeries[i].values[0].value[0].value);
       //site name
         spots[pos].site = myArr.value.timeSeries[i].sourceInfo.siteName;
+      //site code
+        spots[pos].code = myArr.value.timeSeries[i].sourceInfo.siteCode[0].value;
       //latitude
         spots[pos].lat = myArr.value.timeSeries[i].sourceInfo.geoLocation.geogLocation.latitude;
       //longitude
         spots[pos].long = myArr.value.timeSeries[i].sourceInfo.geoLocation.geogLocation.longitude;
 
-        console.log(spots[pos].site + ", " + spots[pos].lat + ", " + spots[pos].long);
+        console.log(spots[pos].site + ", " + spots[pos].code + ", " + spots[pos].lat + ", " + spots[pos].long);
         }
       }
 
