@@ -8068,13 +8068,16 @@ button.close {
   border-bottom: 4px solid #4B8BF7;
 }
 button {
-  width: 10%;
+  width: 100px;
+  border:2px solid white;
+  outline:3px solid #4B8BF7;
   background-color: #4B8BF7;
   color:white;
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  font-size: 14pt;
+  font-size: 20pt;
   text-align: center;
   letter-spacing: 2px;
-  margin:auto;
+  margin-left:auto;
+  margin-right:auto;
 }
