@@ -16,7 +16,7 @@ h1 {
 }
 /* line 54, ../sass/styles.scss */
 h1.dataHead {
-  background: url(../../photos/cartographerWhite.png) repeat #4B8BF7;
+  background: url(../../../photos/cartographerWhite.png) repeat #4B8BF7;
   color: #4B8BF7;
   padding: 10px;
 }
