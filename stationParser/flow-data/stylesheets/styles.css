@@ -8081,3 +8081,7 @@ button {
   margin-left:auto;
   margin-right:auto;
 }
+button:hover {
+  background-color: white;
+  color: #4B8BF7;
+}
