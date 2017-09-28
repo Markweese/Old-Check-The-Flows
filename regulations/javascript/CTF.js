@@ -89,7 +89,7 @@ function clickBasin(){
 	  attribute = this.getAttribute("id");
 
     if(attribute != "yellowstone"){
-    document.getElementById(attribute + "Map").style.backgroundImage = "url(photos/" + attribute + ".jpg)";
+    document.getElementById(attribute + "Map").style.backgroundImage = "url(../../photos/" + attribute + ".jpg)";
   }
     document.getElementById(attribute + "Pane").style.display = "inline-block";
     document.getElementById("closeOut").style.display = "inline-block";
