@@ -31,8 +31,6 @@ xmlhttp.onreadystatechange = function() {
         spots[pos].lat = myArr.value.timeSeries[i].sourceInfo.geoLocation.geogLocation.latitude;
       //longitude
         spots[pos].long = myArr.value.timeSeries[i].sourceInfo.geoLocation.geogLocation.longitude;
-
-        console.log(spots[pos].site + ", " + spots[pos].cfs + ", " + spots[pos].code + ", " + spots[pos].lat + ", " + spots[pos].long);
         }
       }
 
