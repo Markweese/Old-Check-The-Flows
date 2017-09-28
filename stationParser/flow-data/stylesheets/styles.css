@@ -8068,7 +8068,7 @@ button.close {
   border-bottom: 4px solid #4B8BF7;
 }
 button {
-  width: 100px;
+  width: 30%;
   border:2px solid white;
   outline:3px solid #4B8BF7;
   background-color: #4B8BF7;
@@ -8078,8 +8078,8 @@ button {
   font-size: 20pt;
   text-align: center;
   letter-spacing: 2px;
-  margin-left:auto;
-  margin-right:auto;
+  margin:10px auto;
+  display:block;
 }
 button:hover {
   background-color: white;
