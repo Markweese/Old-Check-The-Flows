@@ -120,6 +120,7 @@ function carousel() {
 //jump to the corresponding slot in our listItems array
     var currentIndex = listItems[myIndex - 1];
     document.getElementById("homeImages").style.backgroundImage = "url(\"../../photos/" + gallery[myIndex - 1].img + "\")" ;
+    console.log("url(\"../../photos/" + gallery[myIndex - 1].img + "\")");
     document.getElementById("contentDesc").innerHTML = gallery[myIndex - 1].desc;
 //color the box corresponding to our gallery position
     document.getElementById(currentIndex).style.backgroundColor = "#4B8BF7";
