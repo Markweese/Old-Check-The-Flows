@@ -8067,3 +8067,14 @@ button.close {
 .stationItem:last-child {
   border-bottom: 4px solid #4B8BF7;
 }
+button {
+  width: 10%;
+  background-color: #4B8BF7;
+  color:white;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  text-align: center;
+  letter-spacing: 2px;
+  margin:auto;
+}

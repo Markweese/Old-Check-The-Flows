@@ -39,7 +39,7 @@ xmlhttp.onreadystatechange = function() {
       //print all present cfs readings to their own div
       function printList(item, index){
         if (item.site != undefined){
-        document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
+        document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
         }
       }
       spots.forEach(printList);
