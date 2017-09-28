@@ -18,7 +18,7 @@ xmlhttp.onreadystatechange = function() {
       //variable name
         checkVar = myArr.value.timeSeries[i].variable.variableName;
       //check if the JSON object is CFS
-        if(checkVar == "Streamflow, ft&#179;/s"){
+        if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999){
       //create a new object in the array
         spots.push({});
       //cfs, parsed into a float
