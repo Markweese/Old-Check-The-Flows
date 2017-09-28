@@ -17,7 +17,7 @@ var yellowstone = ["Lamar","Soda Butte","Slough","Yellowstone","Gallatin","Madis
 
 //load the json and put the contents in basinData
 var newRequest = new XMLHttpRequest();
-  newRequest.open('GET','https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/javascript/pointData.json');
+  newRequest.open('GET','https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/regulations/javascript/pointData.json');
   newRequest.onload = function(){
   basinData = JSON.parse(newRequest.responseText);
   };
