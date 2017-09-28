@@ -18,10 +18,10 @@ document.getElementById("mediaDrop").addEventListener("click", dropMobile);
 //mobile dropdown button
 function dropMobile(){
   if(dropOpen == false){
-  document.getElementById("mediaDrop").src = "../../photos/mobileDropped.png";
+  document.getElementById("mediaDrop").src = "../photos/mobileDropped.png";
   dropOpen = true;
 } else if(dropOpen == true){
-  document.getElementById("mediaDrop").src = "../../photos/mobileDrop.png";
+  document.getElementById("mediaDrop").src = "../photos/mobileDrop.png";
   dropOpen = false;
 }
 }
@@ -45,7 +45,7 @@ function addText(){
 //populates the gallery to start and points toward the current array position
 window.onload = function (){
   myIndex++;
-  document.getElementById("homeImages").style.backgroundImage = "url(\"../../photos/" + gallery[0].img + "\")" ;
+  document.getElementById("homeImages").style.backgroundImage = "url(\"../photos/" + gallery[0].img + "\")" ;
   document.getElementById("contentDesc").innerHTML = gallery[0].desc;
   document.getElementById("pos0").style.backgroundColor = "#4B8BF7";
 }
@@ -72,7 +72,7 @@ function forward(){
 //jump to the corresponding slot in our listItems array
   var currentIndex = listItems[myIndex - 1];
 //get the bg image and desc from the current array object
-  document.getElementById("homeImages").style.backgroundImage = "url(\"../../photos/" + gallery[myIndex - 1].img + "\")" ;
+  document.getElementById("homeImages").style.backgroundImage = "url(\"../photos/" + gallery[myIndex - 1].img + "\")" ;
   document.getElementById("contentDesc").innerHTML = gallery[myIndex - 1].desc;
 //color the box corresponding to our gallery position
   document.getElementById(currentIndex).style.backgroundColor = "#4B8BF7";
@@ -96,7 +96,7 @@ function back(){
 //jump to the corresponding slot in our listItems array
   var currentIndex = listItems[myIndex - 1];
 //get the bg image and desc from the current array object
-  document.getElementById("homeImages").style.backgroundImage = "url(\"../../photos/" + gallery[myIndex - 1].img + "\")" ;
+  document.getElementById("homeImages").style.backgroundImage = "url(\"../photos/" + gallery[myIndex - 1].img + "\")" ;
   document.getElementById("contentDesc").innerHTML = gallery[myIndex - 1].desc;
 //color the box corresponding to our gallery position
   document.getElementById(currentIndex).style.backgroundColor = "#4B8BF7";
@@ -119,8 +119,8 @@ function carousel() {
     if (myIndex > gallery.length) {myIndex = 1}
 //jump to the corresponding slot in our listItems array
     var currentIndex = listItems[myIndex - 1];
-    document.getElementById("homeImages").style.backgroundImage = "url(\"../../photos/" + gallery[myIndex - 1].img + "\")" ;
-    console.log("url(\"../../photos/" + gallery[myIndex - 1].img + "\")");
+    document.getElementById("homeImages").style.backgroundImage = "url(\"../photos/" + gallery[myIndex - 1].img + "\")" ;
+    console.log("url(\"../photos/" + gallery[myIndex - 1].img + "\")");
     document.getElementById("contentDesc").innerHTML = gallery[myIndex - 1].desc;
 //color the box corresponding to our gallery position
     document.getElementById(currentIndex).style.backgroundColor = "#4B8BF7";

@@ -89,21 +89,12 @@ function clickBasin(){
 	  attribute = this.getAttribute("id");
 
     if(attribute != "yellowstone"){
-    document.getElementById(attribute + "Map").style.backgroundImage = "url(../../photos/" + attribute + ".jpg)";
+    document.getElementById(attribute + "Map").style.backgroundImage = "url(../photos/" + attribute + ".jpg)";
   }
     document.getElementById(attribute + "Pane").style.display = "inline-block";
     document.getElementById("closeOut").style.display = "inline-block";
 }
-
-//Highlights polyline segments on a hover to give user a better sense of reg area location
-/*function highlight(){
-document.getElementById(this.getAttribute("id") + "Highlight").style.opacity = "1";
-}
-
-function unHighlight(){
-document.getElementById(this.getAttribute("id") + "Highlight").style.opacity = "0.0";
-}*/
-
+//regulation popup
 function regPointPopup(){
 //first statement clears, second displays new pane
   document.getElementById(attribute + "RiverAttributes").innerHTML = "";
