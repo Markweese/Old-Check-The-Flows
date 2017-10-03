@@ -8108,7 +8108,7 @@ button:hover {
 }
 button #addRiver {
   position:static;
-  display:inline;
+  display:none;
   width:20%;
   font-size:16px;
 }
