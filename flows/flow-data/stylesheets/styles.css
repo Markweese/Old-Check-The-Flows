@@ -8070,7 +8070,7 @@ button.close {
 button {
   width: 30%;
   border:none;
-  border-bottom: 5px solid rgba(0,0,0.3);
+  border-bottom: 5px solid rgba(0,0,0,0.3);
   background-color: #4B8BF7;
   color:white;
   font-family: "Lato", sans-serif;
