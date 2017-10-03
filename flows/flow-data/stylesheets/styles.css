@@ -8063,9 +8063,24 @@ button.close {
   padding-top: 20px;
   text-align: center;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 /* line 51, ../sass/styles.scss */
 .stationItem:last-child {
   border-bottom: 4px solid #4B8BF7;
+}
+#map{
+  height: 90%;
+  width:90%;
+  margin:20px auto;
+  border:2px solid white
+  z-index:1;
+}
+#closeMap{
+  display:none;
 }
 button {
   width: 30%;
@@ -8080,6 +8095,9 @@ button {
   letter-spacing: 2px;
   margin:10px auto;
   display:block;
+  position:fixed;
+  left:10%;
+  z-index:2;
 }
 button:hover {
   border-bottom:0px;
