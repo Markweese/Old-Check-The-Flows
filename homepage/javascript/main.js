@@ -7,7 +7,7 @@ var categoryBlocks = document.getElementsByClassName("categoryBlock");
 var labelId;
 var dropOpen = false;
 var timer = window.setInterval(carousel, 4000);
-
+//Accompanying photos for featured stories/galleries
 var gallery = [{"img":"bank.jpg", "desc":"BOX CANYON OF THE HENRYS FORK"},{"img":"jackson.jpg","desc":"JACKSON LAKE AT THE FOOT OF THE GRAND TETONS"},{"img":"deckers.jpg", "desc":"COLORADO'S SOUTH PLATTE RIVER AT ITS FINEST"},{"img":"pebble.jpg", "desc":"STONY SHORES OF COLORADO'S FRASER RIVER"}];
 //gallery buttons
 document.getElementById("arrowRight").addEventListener("click", forward);
