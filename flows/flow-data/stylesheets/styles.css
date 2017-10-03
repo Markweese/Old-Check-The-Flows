@@ -8084,6 +8084,5 @@ button {
 button:hover {
   border-bottom:0px;
   border-top: 5px solid rgba(0,0,0,.3);
-  background-color: white;
   color: #4B8BF7;
 }
