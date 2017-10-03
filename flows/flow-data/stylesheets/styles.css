@@ -8078,6 +8078,9 @@ html, body {
   margin:20px auto;
   border:2px solid white
   z-index:1;
+  position:fixed;
+  top:0px;
+  right:0px;
 }
 #closeMap{
   display:none;
