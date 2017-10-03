@@ -1,5 +1,5 @@
 var spots = [{}];
-var spec = "";
+var spec = "wy";
 var checkVar;
 var arrLength;
 var myArr;
