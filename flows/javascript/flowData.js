@@ -88,6 +88,7 @@ function initMap() {
   function openMap() {
     var mapNode = document.createElement("div");
     var textNode = document.createTextNode("");
+    document.getElementById("list").style.display = "none";
     document.getElementById("openMap").style.display = "none";
     document.getElementById("closeMap").style.display = "block";
     mapNode.appendChild(textNode);
@@ -100,6 +101,7 @@ function initMap() {
   function shutMap(){
     var parent = document.getElementById("dad");
     var child = document.getElementById("map");
+    document.getElementById("list").style.display = "inline";
     document.getElementById("openMap").style.display = "block";
     document.getElementById("closeMap").style.display = "none";
     parent.removeChild(child);
