@@ -8076,7 +8076,7 @@ html, body {
   height: 90%;
   width:90%;
   margin:20px auto;
-  border:2px solid white
+  border:2px solid white;
   z-index:1;
   position:fixed;
   top:0px;
