@@ -8107,7 +8107,6 @@ button:hover {
   border-top: 5px solid rgba(0,0,0,.3);
 }
 button #addRiver {
-  position:absolute;
-  bottom:0px;
-  right:0px;
+  position:static;
+  display:inline;
 }
