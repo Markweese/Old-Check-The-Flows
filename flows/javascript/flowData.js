@@ -81,7 +81,7 @@ function initMap() {
         }
       }
     }
-    xhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/flows/testQuery.json", true);
+    xhr.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
     xhr.send();
   }
 
