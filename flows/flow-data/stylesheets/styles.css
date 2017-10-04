@@ -8099,7 +8099,7 @@ button {
   display:block;
   position:fixed;
   z-index:2;
-  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  margin: 5px auto; /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
 }
