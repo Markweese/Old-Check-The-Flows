@@ -8086,14 +8086,14 @@ html, body {
   display:none;
 }
 button {
-  width: 30%;
+  width: 20%;
   border:none;
   border-bottom: 5px solid rgba(0,0,0,0.3);
   background-color: #4B8BF7;
   color:white;
   font-family: "Lato", sans-serif;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 16px;
   text-align: center;
   letter-spacing: 2px;
   display:block;
