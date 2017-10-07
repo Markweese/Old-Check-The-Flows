@@ -8110,6 +8110,6 @@ button:hover {
 #addRiver {
   margin:2px;
   position:absolute;
-  bottom:50%;
-  right:5px;
+  bottom:5px;
+  left:75%;
 }
