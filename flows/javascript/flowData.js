@@ -1,12 +1,56 @@
 var spots = [{}];
-var spec = "wy";
+var currentState = "";
+var states;
 var checkVar;
+var dropFilter = false;
 var arrLength;
 var myArr;
+//adds event listeners to li items on the dropdown
+var liListeners = document.getElementsByClassName("stateFilter");
 //map http request
 var xhr = new XMLHttpRequest();
+//states for dropdown list
+var stateXhr = new XMLHttpRequest();
 //list http request
 var xmlhttp = new XMLHttpRequest();
+//filter functionality
+stateXhr.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    states = JSON.parse(this.responseText);
+    //add every states filter to the list
+    states.forEach(function (item, index){stateDrop.innerHTML += "<li class=\"stateFilter\">" + states[index].name + "</li>";});
+
+    //display the list if the filter box is clicked, don't display it if clicked twice
+    document.getElementById("selector").addEventListener("click", function (){
+      if (dropFilter == false){
+        dropFilter = true;
+      } else if (true) {
+        dropFilter = false;
+      }
+      if (dropFilter == true){
+        document.getElementById("stateDrop").style.display = "block";
+      } else if (dropFilter == false){
+        document.getElementById("stateDrop").style.display = "none";
+      }
+    });
+    //add event listeners to all dropdown li's in your filer
+    for (var i = 0; i <= liListeners.length - 1; i++) {
+      liListeners[i].addEventListener("click", function (){
+        currentState = this.innerHTML;
+    //check states array for item that has a 'name' value that matches the innerHTML
+    //if it does, pull the abbreviation and plug it into the query
+        for (var j = 0; j <= states.length - 1; j++) {
+          if (states[j].name == currentState){
+            currentState = states[j].abbr;
+          }
+        }
+      });
+    }
+  }
+}
+stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/data/states.json", true);
+stateXhr.send();
+//list population
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -47,7 +91,7 @@ xmlhttp.onreadystatechange = function() {
     }
 };
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
-xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + currentState + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
 
 function initMap() {
