@@ -33,7 +33,7 @@ stateXhr.onreadystatechange = function() {
         document.getElementById("stateDrop").style.display = "none";
       }
     });
-    //add event listeners to all dropdown li's in your filer
+    //add event listeners to all dropdown li's in your filter
     for (var i = 0; i <= liListeners.length - 1; i++) {
       liListeners[i].addEventListener("click", function (){
         currentState = this.innerHTML;
@@ -44,6 +44,9 @@ stateXhr.onreadystatechange = function() {
             currentState = states[j].abbr;
           }
         }
+        //recall the list and map xhr requests with the new query
+        loadList();
+        loadMap();
       });
     }
   }
@@ -51,7 +54,9 @@ stateXhr.onreadystatechange = function() {
 stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/data/states.json", true);
 stateXhr.send();
 //list population
-xmlhttp.onreadystatechange = function() {
+xmlhttp.onreadystatechange = loadList();
+
+function loadList() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
       //Array length
@@ -100,7 +105,9 @@ function initMap() {
     zoom: 6
   });
 
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = loadMap();
+
+  function loadMap() {
     if (this.readyState == 4 && this.status == 200) {
         var myArr = JSON.parse(this.responseText);
 
@@ -125,7 +132,7 @@ function initMap() {
         }
       }
     }
-    xhr.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+    xhr.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + currentState + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
     xhr.send();
   }
 
