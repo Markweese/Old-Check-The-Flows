@@ -11,6 +11,9 @@ var checkVar;
 var arrLength;
 //*****This variable pulls the current state from the filter and plugs it into all following http reqs to usgs*****
 var currentState = "co";
+//these vars resets the map center at the new state center
+var currentLat = 39.059811;
+var currentLong = -105.311104;
 //checks if filter is opened or closed
 var dropFilter = false;
 //filter http req pumps parse json into states Array
@@ -58,6 +61,8 @@ stateXhr.onreadystatechange = function() {
         for (var j = 0; j <= states.length - 1; j++) {
           if (states[j].name == currentState){
             currentState = states[j].abbr;
+            currentLat = states[j].lat;
+            currentLong = states[j].long;
             console.log(currentState);
           }
         }
@@ -118,7 +123,7 @@ xmlhttp.send();
 //google map constructor
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 42.001442, lng: -111.099978},
+    center: {lat: currentLat, lng: currentLong},
     zoom: 6
   });
 
