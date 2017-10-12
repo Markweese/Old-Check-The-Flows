@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="flow-data/stylesheets/styles.css">
+  <style>
+   #stateDrop {
+   display:none;
+   }
+ </style>
 </head>
 <body id="dad">
   <button id = "openMap" onclick = "openMap()"> ADD STATIONS </button>
   <button id = "closeMap" onclick = "shutMap()"> CLOSE </button>
+  <button onclick="filter()">Select A State</button>
+  <ul id="stateDrop">
+  </ul>
   <p id="list"></p>
 <script src="javascript/flowData.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLjdkt3PPXaXImvodlVp4e9a8tCDkd3wc&callback=initMap"
