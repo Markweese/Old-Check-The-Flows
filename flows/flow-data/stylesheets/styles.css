@@ -8084,8 +8084,8 @@ html, body {
 }
 #closeMap{
   display:none;
-  top:90%;
-  left:0px;
+  bottom:2px;
+  margin:inherit;
 }
 #filter{
   display:none;
