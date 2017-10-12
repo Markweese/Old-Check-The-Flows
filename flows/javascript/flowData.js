@@ -18,6 +18,8 @@ var currentLong = -105.311104;
 var dropFilter = false;
 //filter http req pumps parse json into states Array
 var states;
+//the text that gets shown in the indicator box-sizing
+var filterIndicator;
 
 //add listeners to li dropdowns
 var liListeners = document.getElementsByClassName("stateFilter");
@@ -55,11 +57,11 @@ stateXhr.onreadystatechange = function() {
     //add event listeners to all dropdown li's in your filer
     for (var i = 0; i <= liListeners.length - 1; i++) {
       liListeners[i].addEventListener("click", function (){
-        currentState = this.innerHTML;
+        filterIndicator = this.innerHTML;
     //check states array for item that has a 'name' value that matches the innerHTML
     //if it does, pull the abbreviation and plug it into the query
         for (var j = 0; j <= states.length - 1; j++) {
-          if (states[j].name == currentState){
+          if (states[j].name == filterIndicator){
             currentState = states[j].abbr;
             currentLat = states[j].lat;
             currentLong = states[j].long;
@@ -68,6 +70,7 @@ stateXhr.onreadystatechange = function() {
         }
         //recall the http request for the map
         initMap();
+        document.getElementById("filter").innerHTML = filterIndicator;
       });
     }
   }
