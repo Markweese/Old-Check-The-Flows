@@ -1,12 +1,76 @@
+//variable declaration___________________________________
+//pushed station data goes into spots
 var spots = [{}];
-var spec = "wy";
-var checkVar;
-var arrLength;
+//parsed usgs json is pushed into my array
 var myArr;
+//spec is used to store the stations in the list view, it will be using model data once backend is set up
+var spec = "co";
+//checkVar looks to make sure only streamflow data gets pulled
+var checkVar;
+//used for shorthand for 'myArr.value.timeSeries.length' in our USGS json for loop
+var arrLength;
+//*****This variable pulls the current state from the filter and plugs it into all following http reqs to usgs*****
+var currentState = "co";
+//checks if filter is opened or closed
+var dropFilter = false;
+//filter http req pumps parse json into states Array
+var states;
+
+//add listeners to li dropdowns
+var liListeners = document.getElementsByClassName("stateFilter");
+
+//filter http request
+var stateXhr = new XMLHttpRequest();
 //map http request
 var xhr = new XMLHttpRequest();
 //list http request
 var xmlhttp = new XMLHttpRequest();
+//populates filter dropdown list
+var filter = function filter(){
+  if (dropFilter == false){
+    dropFilter = true;
+  } else if (true) {
+    dropFilter = false;
+  }
+  if (dropFilter == true){
+    document.getElementById("stateDrop").style.display = "block";
+  } else if (dropFilter == false){
+    document.getElementById("stateDrop").style.display = "none";
+  }
+};
+
+//http requests____________________________________________
+//local state data request
+stateXhr.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    states = JSON.parse(this.responseText);
+    //add every states filter to the list
+    states.forEach(function (item, index){stateDrop.innerHTML += "<li class=\"stateFilter\">" + states[index].name + "</li>";});
+
+    //display the list if the filter box is clicked, don't display it if clicked twice
+    filter;
+    //add event listeners to all dropdown li's in your filer
+    for (var i = 0; i <= liListeners.length - 1; i++) {
+      liListeners[i].addEventListener("click", function (){
+        currentState = this.innerHTML;
+    //check states array for item that has a 'name' value that matches the innerHTML
+    //if it does, pull the abbreviation and plug it into the query
+        for (var j = 0; j <= states.length - 1; j++) {
+          if (states[j].name == currentState){
+            currentState = states[j].abbr;
+            console.log(currentState);
+          }
+        }
+        //recall the http request for the map
+        initMap();
+      });
+    }
+  }
+}
+stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/data/states.json", true);
+stateXhr.send();
+
+//usgs server request
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -46,10 +110,12 @@ xmlhttp.onreadystatechange = function() {
       spots.forEach(printList);
     }
 };
+//the state parameter will be used once the backend functionality is set
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
-xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=co&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
 
+//google map constructor
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 42.001442, lng: -111.099978},
@@ -81,10 +147,11 @@ function initMap() {
         }
       }
     }
-    xhr.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+    xhr.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&stateCd=" + currentState + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
     xhr.send();
   }
 
+//adds the map element to html
   function openMap() {
     var mapNode = document.createElement("div");
     var textNode = document.createTextNode("");
@@ -98,6 +165,7 @@ function initMap() {
 
   }
 
+//removes the map element from html
   function shutMap(){
     var parent = document.getElementById("dad");
     var child = document.getElementById("map");
