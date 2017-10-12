@@ -166,6 +166,7 @@ function initMap() {
     document.getElementById("list").style.display = "none";
     document.getElementById("openMap").style.display = "none";
     document.getElementById("closeMap").style.display = "block";
+    document.getElementById("filter").style.display = "block";
     mapNode.appendChild(textNode);
     mapNode.id = "map";
     document.getElementById("dad").appendChild(mapNode);
