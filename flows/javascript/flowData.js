@@ -181,5 +181,6 @@ function initMap() {
     document.getElementById("list").style.display = "inline";
     document.getElementById("openMap").style.display = "block";
     document.getElementById("closeMap").style.display = "none";
+    document.getElementById("filter").style.display = "none";
     parent.removeChild(child);
   }
