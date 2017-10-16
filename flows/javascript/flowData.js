@@ -135,7 +135,7 @@ function initMap() {
         var myArr = JSON.parse(this.responseText);
 
         myArr.value.timeSeries.forEach(function (data){
-          if(data.variable.variableName == "Streamflow, ft&#179;/s"){
+          if(data.variable.variableName == "Streamflow, ft&#179;/s" && data.values[0].value[0].value != -999999){
           var latLng = new google.maps.LatLng(data.sourceInfo.geoLocation.geogLocation.latitude, data.sourceInfo.geoLocation.geogLocation.longitude);
           var marker = new google.maps.Marker({
            position: latLng,
