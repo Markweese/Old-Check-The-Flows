@@ -8131,6 +8131,6 @@ button:hover {
   background-color: white;
 }
 
-#stateDrop:hover {
+li:hover {
   background-color: #BAC2FA;
 }
