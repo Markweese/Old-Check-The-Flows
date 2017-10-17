@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" charset="utf-8" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="flow-data/stylesheets/styles.css">
-  <style>
-   #stateDrop {
-   display:none;
-   }
- </style>
 </head>
 <body id="dad">
+  <div class="header">
+    <img id="mediaDrop" src="../photos/mobileDrop.png">
+    <img src="../photos/logo.png">
+    <div id="dropBox" class="container">
+      <div class="dropdown">
+        <button class="dropbtn">FLOWS</button>
+        <div class="dropdown-content">
+          <a href="../flows/river_flows.html">FLOWS</a>
+        </div>
+      </div>
+        <div class="dropdown">
+          <button class="dropbtn">REGULATIONS</button>
+          <div class="dropdown-content">
+            <a href="../regulations/wyRegs.html">WYOMING</a>
+            <a href="#">MONTANA</a>
+            <a href="#">COLORADO</a>
+          </div>
+        </div>
+      <div class="dropdown">
+        <button class="dropbtn">MAPS</button>
+        <div class="dropdown-content">
+          <a href="#">OWNERSHIP</a>
+          <a href="#">RIVER NAVIGATION</a>
+          <a href="#">BACKCOUNTRY ACCESSIBILITY</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">MEDIA</button>
+        <div class="dropdown-content">
+          <a href="#">PHOTO</a>
+          <a href="#">VIDEO</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <button id = "openMap" onclick = "openMap()"> VIEW MAP </button>
   <button id = "closeMap" onclick = "shutMap()"> CLOSE </button>
   <button id = "filter" onclick="filter()">Select A State</button>
