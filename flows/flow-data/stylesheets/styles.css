@@ -8119,7 +8119,7 @@ button:hover {
   left:75%;
 }
 
-ul {
+#stateDrop {
   z-index: 2;
   position:fixed;
   margin: 15px auto;
@@ -8129,4 +8129,8 @@ ul {
   overflow: scroll;
   list-style-type: none;
   background-color: white;
+}
+
+#stateDrop:hover {
+  background-color: #BAC2FA;
 }
