@@ -8089,6 +8089,7 @@ html, body {
 }
 #filter{
   display:none;
+  margin: 0px auto 0px auto;
 }
 button {
   width: 20%;
@@ -8119,16 +8120,20 @@ button:hover {
   left:75%;
 }
 
-#stateDrop {
+#mapFilters {
   z-index: 2;
   position:fixed;
   margin: 15px auto;
-  display:block;
   font-family: "Lato", sans-serif;
+}
+
+ul {
+  display:block;
   height: 40%;
   overflow: scroll;
   list-style-type: none;
   background-color: white;
+  margin: auto;
 }
 
 li:hover {
