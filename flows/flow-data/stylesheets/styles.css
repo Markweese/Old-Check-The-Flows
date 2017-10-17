@@ -8090,6 +8090,7 @@ html, body {
 #filter{
   display:none;
   margin: 0px auto 0px auto;
+  position:static;
 }
 button {
   width: 20%;
@@ -8134,6 +8135,7 @@ ul {
   list-style-type: none;
   background-color: white;
   margin: auto;
+  position: static;
 }
 
 li:hover {
