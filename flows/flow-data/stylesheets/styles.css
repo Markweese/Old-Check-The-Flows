@@ -8123,7 +8123,7 @@ button:hover {
   z-index: 2;
   position:fixed;
   margin: 15px auto;
-  display:block;
+  display:none;
   font-family: "Lato", sans-serif;
   height: 40%;
   overflow: scroll;
