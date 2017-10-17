@@ -8089,8 +8089,7 @@ html, body {
 }
 #filter{
   display:none;
-}
-button {
+.filter {
   width: 20%;
   border:none;
   border-bottom: 5px solid rgba(0,0,0,0.3);
@@ -8108,7 +8107,7 @@ button {
   left: 0;
   right: 0;
 }
-button:hover {
+.filter:hover {
   border-bottom:0px;
   border-top: 5px solid rgba(0,0,0,.3);
 }
