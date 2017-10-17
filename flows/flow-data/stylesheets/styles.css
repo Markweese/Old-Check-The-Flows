@@ -8224,3 +8224,12 @@ li:hover {
 .dropdown-content a:hover {
   background-color: #BAC2FA;
 }
+
+.header #mediaDrop {
+  display: inline;
+  width: 52px;
+  height: auto;
+  float: left;
+  margin: auto 0;
+  padding: 10px 0 0 5px;
+}
