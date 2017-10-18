@@ -79,7 +79,7 @@ stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flow
 stateXhr.send();
 
 //usgs server request
-xmlhttp.onreadystatechange = function() {
+loadList = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
       //Array length
@@ -195,6 +195,7 @@ function initMap() {
 
   function addToList(obj){
     spec.push(obj.className);
+    loadList;
     xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
     xmlhttp.send();
 
