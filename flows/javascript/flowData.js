@@ -4,7 +4,7 @@ var spots = [{}];
 //parsed usgs json is pushed into my array
 var myArr;
 //spec is used to store the stations in the list view, it will be using model data once backend is set up
-var spec = "co";
+var spec = "";
 //checkVar looks to make sure only streamflow data gets pulled
 var checkVar;
 //used for shorthand for 'myArr.value.timeSeries.length' in our USGS json for loop
@@ -111,8 +111,11 @@ xmlhttp.onreadystatechange = function() {
 
       //print all present cfs readings to their own div
       function printList(item, index){
-        if (item.site != undefined){
+        if (item.site != undefined && spec != ""){
+        document.getElementById("emptyNotice").innerHTML = "";
         document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
+      } else if (spec == "") {
+          document.getElementById("list").innerHTML = "<div id=\"emptyNotice\" class=\"station-name\">USE MAP TO ADD STATIONS TO LIST</div>";
         }
       }
       spots.forEach(printList);
