@@ -4,7 +4,7 @@ var spots = [{}];
 //parsed usgs json is pushed into my array
 var myArr;
 //spec is used to store the stations in the list view, it will be using model data once backend is set up
-var spec;
+var spec = [];
 //checkVar looks to make sure only streamflow data gets pulled
 var checkVar;
 //used for shorthand for 'myArr.value.timeSeries.length' in our USGS json for loop
@@ -79,7 +79,6 @@ stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flow
 stateXhr.send();
 
 //usgs server request
-function sendForList() {
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -112,10 +111,10 @@ xmlhttp.onreadystatechange = function() {
 
       //print all present cfs readings to their own div
       function printList(item, index){
-        if (item.site != undefined && spec != ""){
+        if (item.site != undefined && spec[0] != ""){
         document.getElementById("emptyNotice").innerHTML = "";
         document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
-      } else if (spec == "") {
+      } else if (spec[0] == "") {
           document.getElementById("list").innerHTML = "<div id=\"emptyNotice\" class=\"emptyNotice\">LIST EMPTY: USE MAP TO ADD STATIONS</div>";
         }
       }
@@ -126,7 +125,6 @@ xmlhttp.onreadystatechange = function() {
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
 xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
-}
 
 //google map constructor
 function initMap() {
@@ -194,6 +192,4 @@ function initMap() {
   function addToList(obj){
     spec.push(obj.className);
     alert(spec);
-    sendForList();
-
   }
