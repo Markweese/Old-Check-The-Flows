@@ -111,10 +111,10 @@ xmlhttp.onreadystatechange = function() {
 
       //print all present cfs readings to their own div
       function printList(item, index){
-        if (item.site != undefined && spec[0] != ""){
+        if (item.site != undefined && spec.length > 0){
         document.getElementById("emptyNotice").innerHTML = "";
         document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
-      } else if (spec[0] == "") {
+      } else if (spec.length <= 0) {
           document.getElementById("list").innerHTML = "<div id=\"emptyNotice\" class=\"emptyNotice\">LIST EMPTY: USE MAP TO ADD STATIONS</div>";
         }
       }
@@ -191,5 +191,6 @@ function initMap() {
 
   function addToList(obj){
     spec.push(obj.className);
-    alert(spec);
+    xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+    xmlhttp.send();
   }
