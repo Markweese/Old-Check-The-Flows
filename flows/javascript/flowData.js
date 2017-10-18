@@ -197,6 +197,7 @@ function initMap() {
 
   function addToList(obj){
     spec.push(obj.className);
+    loadList;
     xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
     xmlhttp.send();
 
