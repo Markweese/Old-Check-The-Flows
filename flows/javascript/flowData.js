@@ -193,6 +193,7 @@ function initMap() {
 
   function addToList(obj){
     spec.push(obj.className);
+    alert(spec);
     sendForList();
 
   }
