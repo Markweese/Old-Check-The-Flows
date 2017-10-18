@@ -8075,7 +8075,6 @@ html, body {
 #map{
   height: 100%;
   width:100%;
-  margin:20px auto;
   border:2px solid white;
   z-index:1;
   position:fixed;
