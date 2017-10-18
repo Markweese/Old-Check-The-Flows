@@ -125,7 +125,7 @@ xmlhttp.onreadystatechange = function() {
 };
 //the state parameter will be used once the backend functionality is set
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
-if (spec.length >= 0){
+if (spec.length > 0){
 xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
 }
