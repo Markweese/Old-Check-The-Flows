@@ -198,5 +198,5 @@ function initMap() {
     xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
     xmlhttp.send();
 
-    alert(spec);
+    alert("https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active");
   }
