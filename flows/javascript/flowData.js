@@ -190,5 +190,5 @@ function initMap() {
   }
 
   function addToList(){
-    alert("hello");
+    alert(this.getAttribute("class"));
   }
