@@ -145,7 +145,7 @@ function initMap() {
            map: map,
            title: data.FIELD1
           });
-          var details = "<h1>" + data.sourceInfo.siteName + "</h1> <h2> Running at: <b>" + data.values[0].value[0].value + " CFS</b></h2><button onclick=\"function addToList(){alert(details);}\" id=\"addRiver\">Add To List</button>";
+          var details = "<h1>" + data.sourceInfo.siteName + "</h1> <h2> Running at: <b>" + data.values[0].value[0].value + " CFS</b></h2><button onclick=\"function(){alert(details);};\" id=\"addRiver\">Add To List</button>";
           bindInfoWindow(marker, map, new google.maps.InfoWindow(), details);
           }
         });
