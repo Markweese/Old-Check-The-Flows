@@ -8137,3 +8137,15 @@ li:hover {
 #stateDrop {
   display:none;
 }
+
+#emptyNotice {
+  padding-top: 40%;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid #4B8BF7;
+
+}
