@@ -145,7 +145,7 @@ function initMap() {
            map: map,
            title: data.FIELD1
           });
-          var details = "<h1>" + data.sourceInfo.siteName + "</h1> <h2> Running at: <b>" + data.values[0].value[0].value + " CFS</b></h2><button onclick=\"addToList()\" id=\"addRiver\" class=\"" + data.sourceInfo.siteCode[0].value + "\">Add To List</button>";
+          var details = "<h1>" + data.sourceInfo.siteName + "</h1> <h2> Running at: <b>" + data.values[0].value[0].value + " CFS</b></h2><button onclick=\"addToList(this)\" id=\"addRiver\" class=\"" + data.sourceInfo.siteCode[0].value + "\">Add To List</button>";
           bindInfoWindow(marker, map, new google.maps.InfoWindow(), details);
           }
         });
@@ -189,6 +189,6 @@ function initMap() {
     parent.removeChild(child);
   }
 
-  function addToList(){
-    alert(this.getAttribute("class"));
+  function addToList(obj){
+    alert(obj.className);
   }
