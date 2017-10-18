@@ -8134,3 +8134,7 @@ button:hover {
 li:hover {
   background-color: #BAC2FA;
 }
+
+#stateDrop {
+  display:none;
+}
