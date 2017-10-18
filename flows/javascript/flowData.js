@@ -20,8 +20,6 @@ var dropFilter = false;
 var states;
 //the text that gets shown in the indicator box-sizing
 var filterIndicator;
-//this makes the addToList function global and accessible
-var addToList;
 
 //add listeners to li dropdowns
 var liListeners = document.getElementsByClassName("stateFilter");
@@ -140,9 +138,6 @@ function initMap() {
         var myArr = JSON.parse(this.responseText);
 
         myArr.value.timeSeries.forEach(function (data){
-          addToList = function addToList(){
-            alert(data.values[0].value[0].value);
-          }
           if(data.variable.variableName == "Streamflow, ft&#179;/s" && data.values[0].value[0].value != -999999){
           var latLng = new google.maps.LatLng(data.sourceInfo.geoLocation.geogLocation.latitude, data.sourceInfo.geoLocation.geogLocation.longitude);
           var marker = new google.maps.Marker({
@@ -150,7 +145,7 @@ function initMap() {
            map: map,
            title: data.FIELD1
           });
-          var details = "<h1>" + data.sourceInfo.siteName + "</h1> <h2> Running at: <b>" + data.values[0].value[0].value + " CFS</b></h2><button onclick=\"addToList\" id=\"addRiver\">Add To List</button>";
+          var details = "<h1>" + data.sourceInfo.siteName + "</h1> <h2> Running at: <b>" + data.values[0].value[0].value + " CFS</b></h2><button onclick=\"addToList()\" id=\"addRiver\" class=\"" + data.sourceInfo.siteCode[0].value + "\">Add To List</button>";
           bindInfoWindow(marker, map, new google.maps.InfoWindow(), details);
           }
         });
@@ -192,4 +187,8 @@ function initMap() {
     document.getElementById("filter").style.display = "none";
     document.getElementById("stateDrop").style.display = "none";
     parent.removeChild(child);
+  }
+
+  function addToList(){
+    alert("hello");
   }
