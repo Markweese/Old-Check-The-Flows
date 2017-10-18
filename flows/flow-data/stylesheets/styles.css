@@ -8104,7 +8104,7 @@ button {
   display:block;
   position:fixed;
   z-index:2;
-  margin: 5px auto; /* Will not center vertically and won't work in IE6/7. */
+  margin: 0px auto; /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
 }
@@ -8122,7 +8122,7 @@ button:hover {
 #stateDrop {
   z-index: 2;
   position:fixed;
-  margin: 15px auto;
+  margin: 0px auto;
   display:block;
   font-family: "Lato", sans-serif;
   height: 40%;
