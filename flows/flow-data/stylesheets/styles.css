@@ -8073,8 +8073,8 @@ html, body {
   border-bottom: 4px solid #4B8BF7;
 }
 #map{
-  height: 90%;
-  width:90%;
+  height: 100%;
+  width:100%;
   margin:20px auto;
   border:2px solid white;
   z-index:1;
