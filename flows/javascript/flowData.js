@@ -138,6 +138,7 @@ function initMap() {
         var myArr = JSON.parse(this.responseText);
 
         myArr.value.timeSeries.forEach(function (data){
+          function addToList(){alert(data.values[0].value[0].value);}
           if(data.variable.variableName == "Streamflow, ft&#179;/s" && data.values[0].value[0].value != -999999){
           var latLng = new google.maps.LatLng(data.sourceInfo.geoLocation.geogLocation.latitude, data.sourceInfo.geoLocation.geogLocation.longitude);
           var marker = new google.maps.Marker({
@@ -148,7 +149,6 @@ function initMap() {
           var details = "<h1>" + data.sourceInfo.siteName + "</h1> <h2> Running at: <b>" + data.values[0].value[0].value + " CFS</b></h2><button onclick=\"addToList()\" id=\"addRiver\">Add To List</button>";
           bindInfoWindow(marker, map, new google.maps.InfoWindow(), details);
           }
-          function addToList(){alert(data.values[0].value[0].value);}
         });
 
         function bindInfoWindow(marker, map, infowindow, strDescription) {
