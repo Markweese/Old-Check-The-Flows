@@ -115,7 +115,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("emptyNotice").innerHTML = "";
         document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
       } else if (spec == "") {
-          document.getElementById("list").innerHTML = "<div id=\"emptyNotice\" class=\"emptyNotice\">USE MAP TO ADD STATIONS TO LIST</div>";
+          document.getElementById("list").innerHTML = "<div id=\"emptyNotice\" class=\"emptyNotice\">LIST EMPTY: USE MAP TO ADD STATIONS</div>";
         }
       }
       spots.forEach(printList);

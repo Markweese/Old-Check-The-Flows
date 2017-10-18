@@ -8139,13 +8139,14 @@ li:hover {
 }
 
 #emptyNotice {
-  padding-top: 40%;
-  margin: auto;
+  margin: 20% 40%;
   font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 2px;
   text-align: center;
-  border: 2px solid #4B8BF7;
+  border-bottom: 2px solid #4B8BF7;
+  display:inline;
+  position:absolute;
 
 }
