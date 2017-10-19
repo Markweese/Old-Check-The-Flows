@@ -195,7 +195,3 @@ function initMap() {
     spec.push(obj.className);
     loadList(spec);
   }
-
-  function clearList(){
-    document.getElementById("list").innerHTML = "";
-  }
