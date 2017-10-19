@@ -100,8 +100,8 @@ xmlhttp.onreadystatechange = function() {
         if (spots[j].site != checkSite){
           pushStation = true;
         } else {pushStation = false;}
+        alert(spots[j].site + checkSite + pushStation);
       }
-      alert(pushStation);
       //check if the JSON object is CFS
         if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999 && pushStation == true){
       //create a new object in the array
@@ -201,6 +201,10 @@ function initMap() {
   }
 
   function addToList(obj){
-    spec.push(obj.className);
+    //for(var i = 0; i <= spots.length - 1; i++) {
+      //if (spots[i].code != obj.className){
+        spec.push(obj.className);
+      //}
+    //}
     loadList(spec);
   }
