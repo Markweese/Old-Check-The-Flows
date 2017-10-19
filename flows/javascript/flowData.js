@@ -111,11 +111,11 @@ xmlhttp.onreadystatechange = function() {
 
       //print all present cfs readings to their own div
       function printList(item, index){
-        if (item.site != undefined && spec != ""){
-        document.getElementById("emptyNotice").innerHTML = "";
+        if (item.site != undefined && spec.length > 0){
+        document.getElementById("emptyNotice").style.display = "none";
         document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
-      } else if (spec == "") {
-          document.getElementById("list").innerHTML = "<div id=\"emptyNotice\" class=\"emptyNotice\">LIST EMPTY: USE MAP TO ADD STATIONS</div>";
+      } else if (spec.length <= 0) {
+          document.getElementById("list").style.display = "inline";
         }
       }
       spots.forEach(printList);
