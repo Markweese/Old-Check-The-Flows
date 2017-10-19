@@ -79,6 +79,7 @@ stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flow
 stateXhr.send();
 
 //usgs server request
+function loadList(spec){
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -125,6 +126,7 @@ xmlhttp.onreadystatechange = function() {
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
 xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
+}
 
 //google map constructor
 function initMap() {
@@ -191,5 +193,5 @@ function initMap() {
 
   function addToList(obj){
     spec.push(obj.className);
-    alert(spec);
+    loadList(spec);
   }
