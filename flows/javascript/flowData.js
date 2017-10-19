@@ -101,6 +101,7 @@ xmlhttp.onreadystatechange = function() {
           pushStation = true;
         } else {pushStation = false;}
       }
+      alert(pushStation);
       //check if the JSON object is CFS
         if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999 && pushStation == true){
       //create a new object in the array
