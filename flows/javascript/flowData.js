@@ -79,7 +79,6 @@ stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flow
 stateXhr.send();
 
 //usgs server request
-loadList = function() {
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -112,25 +111,20 @@ xmlhttp.onreadystatechange = function() {
 
       //print all present cfs readings to their own div
       function printList(item, index){
-        if (item.site != undefined && spec.length > 0){
+        if (item.site != undefined && spec != ""){
         document.getElementById("emptyNotice").innerHTML = "";
         document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
-      }
-      }
-      if (spec.length <= 0) {
+      } else if (spec == "") {
           document.getElementById("list").innerHTML = "<div id=\"emptyNotice\" class=\"emptyNotice\">LIST EMPTY: USE MAP TO ADD STATIONS</div>";
-        } else if (spec.length > 0) {
-          spots.forEach(printList);
         }
+      }
+      spots.forEach(printList);
     }
-  };
-}
+};
 //the state parameter will be used once the backend functionality is set
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
-if (spec.length > 0){
 xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
-}
 
 //google map constructor
 function initMap() {
@@ -197,9 +191,5 @@ function initMap() {
 
   function addToList(obj){
     spec.push(obj.className);
-    loadList;
-    xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
-    xmlhttp.send();
-
-    alert("https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active");
+    alert(spec);
   }
