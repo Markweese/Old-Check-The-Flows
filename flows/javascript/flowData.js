@@ -102,7 +102,6 @@ xmlhttp.onreadystatechange = function() {
         } else if(spots[j].site == checkSite){
           pushStation = false;
         }
-        alert(spots[j].site + checkSite + pushStation);
       }
       //check if the JSON object is CFS
         if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999 && pushStation == true){
@@ -131,6 +130,7 @@ xmlhttp.onreadystatechange = function() {
         }
       }
       spots.forEach(printList);
+      alert(spots);
     }
 };
 //the state parameter will be used once the backend functionality is set
