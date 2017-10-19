@@ -97,9 +97,11 @@ xmlhttp.onreadystatechange = function() {
         checkSite = myArr.value.timeSeries[i].sourceInfo.siteName;
       //loop through the spots array, if none of the current spot station numbers match the current number, push it, otherwise don't
       for(var j = 0; j <= spots.length - 1; j++) {
-        if (spots[j].site != checkSite){
+        if (spots[j].site != checkSite || spots.length < 1){
           pushStation = true;
-        } else {pushStation = false;}
+        } else if(spots[j].site == checkSite){
+          pushStation = false;
+        }
         alert(spots[j].site + checkSite + pushStation);
       }
       //check if the JSON object is CFS
