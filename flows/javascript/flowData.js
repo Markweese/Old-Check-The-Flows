@@ -80,6 +80,8 @@ stateXhr.send();
 
 //usgs server request
 function loadList(spec){
+//clear the list before executing a new ajax request
+document.getElementById("list").innerHTML = "";
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -119,7 +121,6 @@ xmlhttp.onreadystatechange = function() {
           document.getElementById("list").style.display = "inline";
         }
       }
-      document.getElementById("list").innerHTML = "";
       spots.forEach(printList);
     }
 };
