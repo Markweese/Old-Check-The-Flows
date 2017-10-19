@@ -81,7 +81,7 @@ stateXhr.send();
 //usgs server request
 function loadList(spec){
 //clear the list before executing a new ajax request
-document.getElementById("list").innerHTML = "";
+//document.getElementById("list").innerHTML = "";
 console.log("before req: " + document.getElementById("list").innerHTML);
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
