@@ -82,6 +82,7 @@ stateXhr.send();
 function loadList(spec){
 //clear the list before executing a new ajax request
 document.getElementById("list").innerHTML = "";
+console.log(document.getElementById("list").innerHTML);
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
