@@ -82,7 +82,7 @@ stateXhr.send();
 function loadList(spec){
 //clear the list before executing a new ajax request
 document.getElementById("list").innerHTML = "";
-console.log(document.getElementById("list").innerHTML);
+console.log("before req: " + document.getElementById("list").innerHTML);
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -129,6 +129,7 @@ xmlhttp.onreadystatechange = function() {
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
 xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
 xmlhttp.send();
+console.log("after req: " + document.getElementById("list").innerHTML);
 }
 
 //google map constructor
