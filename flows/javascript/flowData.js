@@ -119,6 +119,7 @@ xmlhttp.onreadystatechange = function() {
           document.getElementById("list").style.display = "inline";
         }
       }
+      document.getElementById("list").innerHTML = "";
       spots.forEach(printList);
     }
 };
