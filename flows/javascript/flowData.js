@@ -83,6 +83,7 @@ function loadList(spec){
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
+      var pushStation;
       //Array length
         arrLength = myArr.value.timeSeries.length;
       //loop through all returned stations
@@ -93,8 +94,15 @@ xmlhttp.onreadystatechange = function() {
         } else {pos = spots.length - 1}
       //variable name
         checkVar = myArr.value.timeSeries[i].variable.variableName;
+        checkSite = myArr.value.timeSeries[i].sourceInfo.siteName;
+      //loop through the spots array, if none of the current spot station numbers match the current number, push it, otherwise don't
+      for(var j = 0; j <= spots.length - 1; j++) {
+        if (spots[j].site != checkSite){
+          pushStation = true;
+        } else {pushStation = false;}
+      }
       //check if the JSON object is CFS
-        if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999){
+        if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999 && pushStation == true){
       //create a new object in the array
         spots.push({});
       //cfs, parsed into a float
