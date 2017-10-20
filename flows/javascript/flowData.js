@@ -81,10 +81,11 @@ stateXhr.send();
 //usgs server request
 function loadList(spec){
   document.getElementById("list").innerHTML="";
-xmlhttp.onreadystatechange = function() {
+  xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
-      var pushStation;
+      //clear spots and reload the updated query
+      spots = [{}];
       //Array length
         arrLength = myArr.value.timeSeries.length;
       //loop through all returned stations
@@ -117,7 +118,7 @@ xmlhttp.onreadystatechange = function() {
       function printList(item, index){
         if (item.site != undefined && spec.length > 0){
         document.getElementById("emptyNotice").style.display = "none";
-        document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
+        document.getElementById("list").innerHTML += "<div class=\"stationItem\"> <div class=\"station-name\">" + item.site + "</div> <div class=\"cfsLevel\">" + item.cfs + " CFS</div></div>";
       } else if (spec.length <= 0) {
           document.getElementById("list").style.display = "inline";
         }
@@ -195,10 +196,14 @@ function initMap() {
   }
 
   function addToList(obj){
+    //the function(o) segment of this statement reads the array object 'code' values into their own array, then index of checks if
+    //any of those values match the current station trying to be pushed into the query statement, if any of them do, we know the station
+    //is already on the query spec. A similar statement is used when pushing objects into spots to avoid duplicates.
     var index = spots.map(function(o) { return o.code; }).indexOf(obj.className);
-    console.log(index);
+    //push into query to USGS, or don't if the station already exists
     if(index == -1){
       spec.push(obj.className);
+      document.getElementById("list").innerHTML = "";
       loadList(spec);
       alert("Added To List");
     } else {
