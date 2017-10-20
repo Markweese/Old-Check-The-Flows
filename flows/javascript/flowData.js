@@ -195,20 +195,13 @@ function initMap() {
   }
 
   function addToList(obj){
-    var notify;
-    for(var i = 0; i <= spots.length - 1; i++) {
-      if (spots[i].code != obj.className){
-        spec.push(obj.className);
-        notify = "positive";
-      } else {
-        notify = "negative";
-        return;
-        }
-      }
-      if(notify == "positive"){
-        alert("Added to list.");
-      } else if (notify == "negative"){
-        alert("Looks like this station is already on your list.")
-      }
-    loadList(spec);
+    var index = spots.map(function(o) { return o.code; }).indexOf(obj.className);
+    console.log(index);
+    if(index == -1){
+      spec.push(obj.className);
+      loadList(spec);
+      alert("Added To List");
+    } else {
+      alert("This station is already on your list.");
+    }
   }
