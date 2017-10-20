@@ -130,7 +130,7 @@ xmlhttp.onreadystatechange = function() {
         }
       }
       spots.forEach(printList);
-      alert(spots);
+      alert(spots[0]);
     }
 };
 //the state parameter will be used once the backend functionality is set
