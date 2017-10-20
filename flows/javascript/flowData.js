@@ -80,6 +80,7 @@ stateXhr.send();
 
 //usgs server request
 function loadList(spec){
+  document.getElementById("list").innerHTML="";
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -95,16 +96,8 @@ xmlhttp.onreadystatechange = function() {
       //variable name
         checkVar = myArr.value.timeSeries[i].variable.variableName;
         checkSite = myArr.value.timeSeries[i].sourceInfo.siteName;
-      //loop through the spots array, if none of the current spot station numbers match the current number, push it, otherwise don't
-      for(var j = 0; j <= spots.length - 1; j++) {
-        if (spots[j].site != checkSite || spots.length < 1){
-          pushStation = true;
-        } else if(spots[j].site == checkSite){
-          pushStation = false;
-        }
-      }
       //check if the JSON object is CFS
-        if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999 && pushStation == true){
+        if(checkVar == "Streamflow, ft&#179;/s" && myArr.value.timeSeries[i].values[0].value[0].value != -999999){
       //create a new object in the array
         spots.push({});
       //cfs, parsed into a float
@@ -130,7 +123,6 @@ xmlhttp.onreadystatechange = function() {
         }
       }
       spots.forEach(printList);
-      alert(spec + spots[0]);
     }
 };
 //the state parameter will be used once the backend functionality is set
@@ -203,10 +195,20 @@ function initMap() {
   }
 
   function addToList(obj){
-    //for(var i = 0; i <= spots.length - 1; i++) {
-      //if (spots[i].code != obj.className){
+    var notify;
+    for(var i = 0; i <= spots.length - 1; i++) {
+      if (spots[i].code != obj.className){
         spec.push(obj.className);
-      //}
-    //}
+        notify = "positive";
+      } else {
+        notify = "negative";
+        return;
+        }
+      }
+      if(notify == "positive"){
+        alert("Added to list.");
+      } else if (notify == "negative"){
+        alert("Looks like this station is already on your list.")
+      }
     loadList(spec);
   }
