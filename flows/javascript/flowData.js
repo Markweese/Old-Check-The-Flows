@@ -104,7 +104,7 @@ function loadList(spec){
       //cfs, parsed into a float
         spots[pos].cfs = parseInt(myArr.value.timeSeries[i].values[0].value[0].value);
       //site name
-        spots[pos].site = myArr.value.timeSeries[i].sourceInfo.siteName;
+        spots[pos].site = myArr.value.timeSeries[i].sourceInfo.siteName.toUpperCase();
       //site code
         spots[pos].code = myArr.value.timeSeries[i].sourceInfo.siteCode[0].value;
       //latitude
