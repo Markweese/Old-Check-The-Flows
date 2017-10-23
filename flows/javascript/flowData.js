@@ -190,7 +190,8 @@ function initMap() {
     var parent = document.getElementById("dad");
     var child = document.getElementById("map");
     document.getElementById("list").innerHTML = "";
-
+    xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+    xmlhttp.send();
     document.getElementById("list").style.display = "inline";
     document.getElementById("openMap").style.display = "block";
     document.getElementById("closeMap").style.display = "none";
