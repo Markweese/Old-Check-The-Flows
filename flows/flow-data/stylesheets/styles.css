@@ -1816,8 +1816,8 @@ ol {
   position:fixed;
   margin: 0px auto;
   font-family: "Lato", sans-serif;
-  height: 40%;
-  width:70%;
+  height: 70%;
+  width:100%;
   overflow: scroll;
   list-style-type: none;
   background-color: white;
@@ -8097,6 +8097,15 @@ html, body {
 }
 #filter{
   display:none;
+  width:100%;
+}
+#filterBlock{
+  display:block;
+  width:20%;
+  height:100%;
+  position: fixed;
+  top:0px;
+  margin:auto;
 }
 button {
   width: 20%;
