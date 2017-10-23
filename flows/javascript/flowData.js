@@ -80,7 +80,7 @@ stateXhr.send();
 
 //usgs server request
 function loadList(spec){
-  document.getElementById("list").innerHTML="";
+  //document.getElementById("list").innerHTML="";
   xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
@@ -128,8 +128,8 @@ function loadList(spec){
 };
 //the state parameter will be used once the backend functionality is set
 //xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=09037500,09080400,06700000,09132500,09046490,06620000,06730200,06741510,06751490&siteType=ST&siteStatus=active", true);
-xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
-xmlhttp.send();
+//xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+//xmlhttp.send();
 }
 
 //google map constructor
@@ -173,6 +173,8 @@ function initMap() {
     var mapNode = document.createElement("div");
     var textNode = document.createTextNode("");
     document.getElementById("list").style.display = "none";
+    xmlhttp.open("GET", "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + spec + "&parameterCd=00060,00065&siteType=ST&siteStatus=active", true);
+    xmlhttp.send();
     document.getElementById("openMap").style.display = "none";
     document.getElementById("closeMap").style.display = "block";
     document.getElementById("filter").style.display = "block";
@@ -187,6 +189,8 @@ function initMap() {
   function shutMap(){
     var parent = document.getElementById("dad");
     var child = document.getElementById("map");
+    document.getElementById("list").innerHTML = "";
+
     document.getElementById("list").style.display = "inline";
     document.getElementById("openMap").style.display = "block";
     document.getElementById("closeMap").style.display = "none";
