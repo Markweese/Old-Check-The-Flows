@@ -1812,6 +1812,15 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
+  z-index: 2;
+  position:fixed;
+  margin: 0px auto;
+  font-family: "Lato", sans-serif;
+  height: 40%;
+  width:70%
+  overflow: scroll;
+  list-style-type: none;
+  background-color: white;
 }
 /* line 158, ../../../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_type.scss */
 ul ul,
@@ -8117,19 +8126,6 @@ button:hover {
   bottom:5px;
   left:75%;
 }
-
-#stateDrop {
-  z-index: 2;
-  position:fixed;
-  margin: 0px auto;
-  display:block;
-  font-family: "Lato", sans-serif;
-  height: 40%;
-  overflow: scroll;
-  list-style-type: none;
-  background-color: white;
-}
-
 li:hover {
   background-color: #BAC2FA;
 }
