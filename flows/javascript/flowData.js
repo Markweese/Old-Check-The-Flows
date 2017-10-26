@@ -82,8 +82,14 @@ stateXhr.send();
 function loadList(spec){
   //document.getElementById("list").innerHTML="";
   xmlhttp.onreadystatechange = function() {
+  if (this.readyState != 4){
+    //if the data isn't loaded run the helix load display
+    document.getElementById('helixBox').style.display = "block";
+  }
   if (this.readyState == 4 && this.status == 200) {
       var myArr = JSON.parse(this.responseText);
+      //if the data is loaded shut the helix load display
+      document.getElementById('helixBox').style.display = "none";
       //clear spots and reload the updated query
       spots = [{}];
       //Array length
@@ -136,8 +142,14 @@ function initMap() {
   });
 
   xhr.onreadystatechange = function() {
+    if (this.readyState != 4){
+      //if the data isn't loaded run the helix load display
+      document.getElementById('helixBox').style.display = "block";
+    }
     if (this.readyState == 4 && this.status == 200) {
         var myArr = JSON.parse(this.responseText);
+        //if the data is loaded shut the helix load display
+        document.getElementById('helixBox').style.display = "none";
 
         myArr.value.timeSeries.forEach(function (data){
           if(data.variable.variableName == "Streamflow, ft&#179;/s" && data.values[0].value[0].value != -999999){
