@@ -57,6 +57,82 @@
    }
  }
 
+//______map styles__________
+ ul {
+  z-index: 2;
+  position:fixed;
+  margin: 0px auto;
+  font-family: $font-main;
+  height: 70%;
+  width:20%;
+  overflow: scroll;
+  list-style-type: none;
+  background-color: white;
+ }
+ #map {
+  height: 100%;
+  width:100%;
+  z-index:1;
+  position:fixed;
+  top:0px;
+  right:0px;
+}
+#closeMap{
+  display:none;
+  bottom:2px;
+  margin:inherit;
+}
+#filter{
+  display:none;
+}
+button {
+  width: 20%;
+  border:none;
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+  background-color: $color-main;
+  color:white;
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 2px;
+  display:block;
+  position:fixed;
+  z-index:2;
+  margin: 0px auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+}
+button:hover {
+  border-bottom:0px;
+  border-top: 5px solid rgba(0,0,0,.3);
+}
+#addRiver {
+  margin:2px;
+  position:absolute;
+  bottom:5px;
+  left:75%;
+}
+li:hover {
+  background-color: $color-alt;
+}
+
+#stateDrop {
+  display:none;
+}
+
+#emptyNotice {
+  margin: 20% 40%;
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  border-bottom: 2px solid $color-main;
+  display:inline;
+  position:absolute;
+
+}
  //____________Begin Helix CSS______________
 
  *, *:before, *:after {
