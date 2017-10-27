@@ -38,7 +38,7 @@ var filter = function filter(){
     dropFilter = false;
   }
   if (dropFilter == true){
-    document.getElementById("drop").style.display = "inline";
+    document.getElementById("drop").style.display = "inline-block";
   } else if (dropFilter == false){
     document.getElementById("drop").style.display = "none";
   }
