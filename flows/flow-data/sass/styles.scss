@@ -135,6 +135,9 @@ html, body {
   display:none;
   width:80%;
   height:100px;
+  position:fixed;
+  top:0px;
+  z-index:2;
   text-align:center;
   margin:auto;
   .filter {
@@ -149,6 +152,7 @@ html, body {
   }
   ul {
     display:none;
+    position:static;
     text-align:left;
     list-style-type:none;
     width:100%;
@@ -156,6 +160,7 @@ html, body {
   }
   li:hover {
     background-color: $color-alt;
+
   }
 }
  //____________Begin Helix CSS______________
