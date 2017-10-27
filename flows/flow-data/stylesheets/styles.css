@@ -8162,7 +8162,14 @@ li:hover {
   position: absolute;
 }
 
-/* line 139, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 144, ../sass/styles.scss */
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -8170,7 +8177,7 @@ li:hover {
   box-sizing: border-box;
 }
 
-/* line 146, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .helix-box {
   width: 100%;
   height: 100%;
@@ -8183,23 +8190,23 @@ li:hover {
   line-height: 100vh;
 }
 
-/* line 158, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .helix {
   display: inline-block;
   position: relative;
 }
 
-/* line 163, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 .dots {
   display: inline-block;
   position: relative;
   vertical-align: middle;
 }
-/* line 168, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 .dots:not(:last-child) {
   margin-right: 9px;
 }
-/* line 172, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .dots:before, .dots:after {
   content: "";
   display: inline-block;
@@ -8208,7 +8215,7 @@ li:hover {
   border-radius: 50%;
   position: absolute;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(1):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8218,7 +8225,7 @@ li:hover {
   animation-delay: -0.9s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(1):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8228,7 +8235,7 @@ li:hover {
   animation-delay: -0.9s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(2):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8238,7 +8245,7 @@ li:hover {
   animation-delay: -1.8s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(2):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8248,7 +8255,7 @@ li:hover {
   animation-delay: -1.8s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(3):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8258,7 +8265,7 @@ li:hover {
   animation-delay: -2.7s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(3):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8268,7 +8275,7 @@ li:hover {
   animation-delay: -2.7s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(4):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8278,7 +8285,7 @@ li:hover {
   animation-delay: -3.6s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(4):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8288,7 +8295,7 @@ li:hover {
   animation-delay: -3.6s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(5):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8298,7 +8305,7 @@ li:hover {
   animation-delay: -4.5s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(5):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8308,7 +8315,7 @@ li:hover {
   animation-delay: -4.5s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(6):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8318,7 +8325,7 @@ li:hover {
   animation-delay: -5.4s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(6):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8328,7 +8335,7 @@ li:hover {
   animation-delay: -5.4s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(7):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8338,7 +8345,7 @@ li:hover {
   animation-delay: -6.3s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(7):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8348,7 +8355,7 @@ li:hover {
   animation-delay: -6.3s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(8):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8358,7 +8365,7 @@ li:hover {
   animation-delay: -7.2s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(8):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8368,7 +8375,7 @@ li:hover {
   animation-delay: -7.2s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(9):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8378,7 +8385,7 @@ li:hover {
   animation-delay: -8.1s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(9):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8388,7 +8395,7 @@ li:hover {
   animation-delay: -8.1s;
   background-color: #777;
 }
-/* line 184, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .dots:nth-child(10):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8398,7 +8405,7 @@ li:hover {
   animation-delay: -9s;
   background-color: #4B8BF7;
 }
-/* line 197, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .dots:nth-child(10):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
