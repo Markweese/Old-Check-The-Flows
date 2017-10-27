@@ -8159,7 +8159,7 @@ html, body {
   font-family: "Lato", sans-serif;
   display: none;
   width: 80%;
-  height: 100px;
+  height: 50%;
   position: fixed;
   z-index: 2;
   text-align: center;
@@ -8168,7 +8168,7 @@ html, body {
 /* line 142, ../sass/styles.scss */
 .filterList .filter {
   width: 20%;
-  height: 100px;
+  height: 100%;
   display: inline-block;
   vertical-align: top;
 }
