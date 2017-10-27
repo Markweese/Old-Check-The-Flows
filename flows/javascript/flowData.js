@@ -38,9 +38,9 @@ var filter = function filter(){
     dropFilter = false;
   }
   if (dropFilter == true){
-    document.getElementById("stateDrop").style.display = "block";
+    document.getElementById("drop").style.display = "inline";
   } else if (dropFilter == false){
-    document.getElementById("stateDrop").style.display = "none";
+    document.getElementById("drop").style.display = "none";
   }
 };
 
@@ -50,7 +50,7 @@ stateXhr.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     states = JSON.parse(this.responseText);
     //add every states filter to the list
-    states.forEach(function (item, index){stateDrop.innerHTML += "<li class=\"stateFilter\">" + states[index].name + "</li>";});
+    states.forEach(function (item, index){drop.innerHTML += "<li class=\"stateFilter\">" + states[index].name + "</li>";});
 
     //display the list if the filter box is clicked, don't display it if clicked twice
     filter;
@@ -70,7 +70,7 @@ stateXhr.onreadystatechange = function() {
         }
         //recall the http request for the map
         initMap();
-        document.getElementById("filter").innerHTML = filterIndicator;
+        document.getElementById("stateFilter").innerHTML = filterIndicator;
       });
     }
   }
@@ -185,7 +185,7 @@ function initMap() {
     xmlhttp.send();
     document.getElementById("openMap").style.display = "none";
     document.getElementById("closeMap").style.display = "block";
-    document.getElementById("filter").style.display = "block";
+    document.getElementById("filterList").style.display = "block";
     mapNode.appendChild(textNode);
     mapNode.id = "map";
     document.getElementById("dad").appendChild(mapNode);
@@ -203,7 +203,7 @@ function initMap() {
     document.getElementById("list").style.display = "inline";
     document.getElementById("openMap").style.display = "block";
     document.getElementById("closeMap").style.display = "none";
-    document.getElementById("filter").style.display = "none";
+    document.getElementById("filterList").style.display = "none";
     document.getElementById("stateDrop").style.display = "none";
     parent.removeChild(child);
   }
@@ -213,6 +213,8 @@ function initMap() {
     //any of those values match the current station trying to be pushed into the query statement, if any of them do, we know the station
     //is already on the query spec. A similar statement is used when pushing objects into spots to avoid duplicates.
     var index = spots.map(function(o) { return o.code; }).indexOf(obj.className);
+    //as soon as a station is selected, stop displaying the notice
+    document.getElementById("emptyNotice").style.display = "none";
     //push into query to USGS, or don't if the station already exists
     if(index == -1){
       spec.push(obj.className);

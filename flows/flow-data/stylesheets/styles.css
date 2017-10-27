@@ -8099,39 +8099,13 @@ ul {
   margin: inherit;
 }
 
-/* line 86, ../sass/styles.scss */
-#filter {
-  display: none;
-}
-
-/* line 89, ../sass/styles.scss */
-button {
-  width: 20%;
-  border: none;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
-  background-color: #4B8BF7;
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 2px;
-  display: block;
-  position: fixed;
-  z-index: 2;
-  margin: 0px auto;
-  /* Will not center vertically and won't work in IE6/7. */
-  left: 0;
-  right: 0;
-}
-
-/* line 107, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 button:hover {
   border-bottom: 0px;
   border-top: 5px solid rgba(0, 0, 0, 0.3);
 }
 
-/* line 111, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 #addRiver {
   margin: 2px;
   position: absolute;
@@ -8139,17 +8113,12 @@ button:hover {
   left: 75%;
 }
 
-/* line 117, ../sass/styles.scss */
-li:hover {
-  background-color: #BAC2FA;
-}
-
-/* line 121, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
 #stateDrop {
   display: none;
 }
 
-/* line 125, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 #emptyNotice {
   margin: 20% 40%;
   font-family: "Lato", sans-serif;
@@ -8162,14 +8131,53 @@ li:hover {
   position: absolute;
 }
 
-/* line 137, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
+.filterList {
+  font-family: "Lato", sans-serif;
+  display: none;
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  margin: auto;
+}
+
+/* line 130, ../sass/styles.scss */
+.filter {
+  width: 20%;
+  height: 100px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 136, ../sass/styles.scss */
+button {
+  width: 100%;
+}
+
+/* line 139, ../sass/styles.scss */
+ul {
+  display: none;
+  text-align: left;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0px;
+}
+
+/* line 147, ../sass/styles.scss */
+li:hover {
+  background-color: #BAC2FA;
+}
+
+/* line 152, ../sass/styles.scss */
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -8177,7 +8185,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 .helix-box {
   width: 100%;
   height: 100%;
@@ -8190,23 +8198,23 @@ html, body {
   line-height: 100vh;
 }
 
-/* line 163, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .helix {
   display: inline-block;
   position: relative;
 }
 
-/* line 168, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .dots {
   display: inline-block;
   position: relative;
   vertical-align: middle;
 }
-/* line 173, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 .dots:not(:last-child) {
   margin-right: 9px;
 }
-/* line 177, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .dots:before, .dots:after {
   content: "";
   display: inline-block;
@@ -8215,7 +8223,7 @@ html, body {
   border-radius: 50%;
   position: absolute;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(1):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8225,7 +8233,7 @@ html, body {
   animation-delay: -0.9s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(1):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8235,7 +8243,7 @@ html, body {
   animation-delay: -0.9s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(2):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8245,7 +8253,7 @@ html, body {
   animation-delay: -1.8s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(2):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8255,7 +8263,7 @@ html, body {
   animation-delay: -1.8s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(3):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8265,7 +8273,7 @@ html, body {
   animation-delay: -2.7s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(3):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8275,7 +8283,7 @@ html, body {
   animation-delay: -2.7s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(4):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8285,7 +8293,7 @@ html, body {
   animation-delay: -3.6s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(4):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8295,7 +8303,7 @@ html, body {
   animation-delay: -3.6s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(5):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8305,7 +8313,7 @@ html, body {
   animation-delay: -4.5s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(5):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8315,7 +8323,7 @@ html, body {
   animation-delay: -4.5s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(6):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8325,7 +8333,7 @@ html, body {
   animation-delay: -5.4s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(6):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8335,7 +8343,7 @@ html, body {
   animation-delay: -5.4s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(7):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8345,7 +8353,7 @@ html, body {
   animation-delay: -6.3s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(7):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8355,7 +8363,7 @@ html, body {
   animation-delay: -6.3s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(8):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8365,7 +8373,7 @@ html, body {
   animation-delay: -7.2s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(8):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8375,7 +8383,7 @@ html, body {
   animation-delay: -7.2s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(9):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8385,7 +8393,7 @@ html, body {
   animation-delay: -8.1s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(9):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
@@ -8395,7 +8403,7 @@ html, body {
   animation-delay: -8.1s;
   background-color: #777;
 }
-/* line 189, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .dots:nth-child(10):before {
   -webkit-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -8405,7 +8413,7 @@ html, body {
   animation-delay: -9s;
   background-color: #4B8BF7;
 }
-/* line 202, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .dots:nth-child(10):after {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
