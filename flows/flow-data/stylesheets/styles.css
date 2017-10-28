@@ -8159,7 +8159,7 @@ html, body {
   font-family: "Lato", sans-serif;
   display: none;
   width: 80%;
-  height: 50%;
+  height: 20px;
   position: fixed;
   z-index: 2;
   text-align: center;
