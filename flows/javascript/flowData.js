@@ -39,8 +39,10 @@ var filter = function filter(){
   }
   if (dropFilter == true){
     document.getElementById("drop").style.display = "inline-block";
+    document.getElementById("filterList").style.height = "50%";
   } else if (dropFilter == false){
     document.getElementById("drop").style.display = "none";
+    document.getElementById("filterList").style.height = "20px";
   }
 };
 
