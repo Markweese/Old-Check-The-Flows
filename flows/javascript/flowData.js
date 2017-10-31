@@ -206,7 +206,6 @@ function initMap() {
     document.getElementById("openMap").style.display = "block";
     document.getElementById("closeMap").style.display = "none";
     document.getElementById("filterList").style.display = "none";
-    document.getElementById("stateDrop").style.display = "none";
     parent.removeChild(child);
   }
 
