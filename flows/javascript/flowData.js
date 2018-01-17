@@ -77,7 +77,7 @@ stateXhr.onreadystatechange = function() {
     }
   }
 }
-stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Check-The-Flows/master/data/states.json", true);
+stateXhr.open("GET", "https://raw.githubusercontent.com/Markweese/Old-Check-The-Flows/master/data/states.json", true);
 stateXhr.send();
 
 //usgs server request
